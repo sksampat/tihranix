@@ -23,7 +23,7 @@ export function Navbar() {
           className="rounded-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-accent"
           aria-label="Tihranix home"
         >
-          <SiteLogo size="sm" />
+          <SiteLogo size="md" />
         </a>
 
         <nav

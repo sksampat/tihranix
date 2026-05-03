@@ -7,10 +7,11 @@ type SiteLogoProps = {
   size?: "sm" | "md" | "lg";
 };
 
+/** Display height for the raster logo (width follows aspect ratio). */
 const heightClass = {
-  sm: "h-8",
-  md: "h-10",
-  lg: "h-12",
+  sm: "h-14",
+  md: "h-16 sm:h-[4.5rem]",
+  lg: "h-[4.5rem] sm:h-20",
 } as const;
 
 const textClass = {
@@ -32,9 +33,9 @@ export function SiteLogo({
       <Image
         src={LOGO_PATH}
         alt="Tihranix"
-        width={320}
-        height={96}
-        className={`${heightClass[size]} w-auto max-w-[200px] shrink-0 object-contain object-left sm:max-w-none`}
+        width={640}
+        height={192}
+        className={`${heightClass[size]} w-auto max-w-[min(92vw,460px)] shrink-0 object-contain object-left md:max-w-none`}
         priority
       />
       {showWordmark ? (
