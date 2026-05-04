@@ -5,10 +5,11 @@ import { ProblemSection } from "@/components/sections/problem";
 import { SolutionSection } from "@/components/sections/solution";
 import { RoiSection } from "@/components/sections/roi";
 import { HowItWorksSection } from "@/components/sections/how-it-works";
+import { AgenticSystemSection } from "@/components/sections/agentic-system";
 import { PersonaSection } from "@/components/sections/persona";
 import { ExpansionSection } from "@/components/sections/expansion";
 import { FinalCtaSection } from "@/components/sections/final-cta";
-import { RegisterSection } from "@/components/sections/register";
+import { ContactSection } from "@/components/sections/contact";
 
 export default function Home() {
   return (
@@ -20,10 +21,11 @@ export default function Home() {
         <SolutionSection />
         <RoiSection />
         <HowItWorksSection />
+        <AgenticSystemSection />
         <PersonaSection />
         <ExpansionSection />
         <FinalCtaSection />
-        <RegisterSection />
+        <ContactSection />
       </main>
       <Footer />
     </div>
