@@ -33,7 +33,7 @@ export function PersonaSection() {
         <div className="grid gap-5 md:grid-cols-3">
           {personas.map((p) => (
             <GlassCard key={p.role} as="article">
-              <p className="text-xs font-semibold uppercase tracking-[0.16em] text-brand-cyan">
+              <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-brand-cyan">
                 {p.role}
               </p>
               <p className="mt-4 text-sm leading-relaxed text-brand-muted">

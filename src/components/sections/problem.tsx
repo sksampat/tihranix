@@ -33,7 +33,7 @@ export function ProblemSection() {
         <div className="grid gap-5 md:grid-cols-3">
           {cards.map((c) => (
             <GlassCard key={c.title} as="article" className="flex flex-col">
-              <h3 className="text-lg font-semibold text-brand-soft">{c.title}</h3>
+              <h3 className="text-lg font-semibold text-white">{c.title}</h3>
               <p className="mt-3 flex-1 text-sm leading-relaxed text-brand-muted">
                 {c.body}
               </p>

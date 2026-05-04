@@ -16,20 +16,20 @@ export function SectionHeading({
 }: SectionHeadingProps) {
   const alignClass = align === "center" ? "mx-auto text-center" : "";
   return (
-    <div className={`max-w-3xl space-y-4 ${alignClass}`}>
+    <div className={`max-w-3xl space-y-5 ${alignClass}`}>
       {eyebrow ? (
-        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand-cyan">
+        <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-brand-cyan">
           {eyebrow}
         </p>
       ) : null}
       <h2
         id={headingId}
-        className="text-2xl font-semibold tracking-tight text-brand-soft sm:text-3xl lg:text-4xl"
+        className="text-2xl font-semibold tracking-tight text-white sm:text-3xl lg:text-[2.35rem] lg:leading-[1.12]"
       >
         {title}
       </h2>
       {description ? (
-        <p className="text-base leading-relaxed text-brand-muted lg:text-lg">
+        <p className="max-w-2xl text-base leading-relaxed text-brand-muted lg:text-lg">
           {description}
         </p>
       ) : null}

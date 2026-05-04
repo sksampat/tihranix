@@ -33,6 +33,9 @@ const stats = [
   },
 ] as const;
 
+const nestedCard =
+  "rounded-xl border border-white/[0.08] bg-[linear-gradient(180deg,rgb(255_255_255/0.03)_0%,rgb(0_0_0/0.08)_100%)] p-4 shadow-[inset_0_1px_0_0_rgb(255_255_255/0.04)]";
+
 export function HeroDashboardMockup() {
   return (
     <div
@@ -40,46 +43,43 @@ export function HeroDashboardMockup() {
       aria-hidden
     >
       <div
-        className="pointer-events-none absolute -inset-4 rounded-3xl bg-[radial-gradient(ellipse_70%_50%_at_70%_20%,rgba(167,139,250,0.12),transparent),radial-gradient(ellipse_50%_40%_at_20%_80%,rgba(34,211,238,0.1),transparent)]"
+        className="pointer-events-none absolute -inset-4 rounded-3xl bg-wash-hero opacity-90"
         aria-hidden
       />
-      <GlassCard className="relative overflow-hidden p-0 ring-1 ring-white/[0.06]">
-        <div className="border-b border-white/[0.06] bg-gradient-to-r from-brand-navy-mid/90 to-brand-navy/80 px-5 py-4 sm:px-6">
+      <GlassCard className="relative overflow-hidden p-0">
+        <div className="border-b border-white/[0.08] bg-[linear-gradient(90deg,rgb(10_20_36/0.85)_0%,rgb(5_10_18/0.92)_100%)] px-5 py-4 sm:px-6">
           <div className="flex flex-wrap items-center justify-between gap-3">
             <div>
               <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-brand-muted">
                 Dead inventory liquidation engine
               </p>
-              <p className="mt-1 text-sm font-semibold text-brand-soft">
+              <p className="mt-1 text-sm font-semibold text-white">
                 Capital unlock dashboard
               </p>
             </div>
-            <span className="rounded-full border border-brand-cyan/25 bg-brand-cyan/[0.08] px-3 py-1 text-[11px] font-medium text-brand-cyan">
+            <span className="rounded-full border border-brand-cyan/30 bg-brand-cyan/[0.08] px-3 py-1 text-[11px] font-medium text-brand-cyan">
               Live scenario
             </span>
           </div>
         </div>
         <div className="grid gap-3 p-4 sm:grid-cols-2 sm:gap-4 sm:p-5 lg:grid-cols-3">
           {stats.map((s) => (
-            <div
-              key={s.label}
-              className="rounded-xl border border-white/[0.06] bg-white/[0.02] p-4 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.04)] lg:last:col-span-1"
-            >
+            <div key={s.label} className={`${nestedCard} lg:last:col-span-1`}>
               <p className="text-[11px] font-medium uppercase tracking-wide text-brand-muted">
                 {s.label}
               </p>
-              <p className="mt-2 text-2xl font-semibold tracking-tight text-brand-soft sm:text-[1.65rem]">
+              <p className="mt-2 text-2xl font-semibold tracking-tight text-white sm:text-[1.65rem]">
                 {s.value}
               </p>
               <p className="mt-1 text-xs text-brand-muted">{s.detail}</p>
-              <p className="mt-3 text-[11px] text-brand-cyan/80">{s.trend}</p>
+              <p className="mt-3 text-[11px] text-brand-muted">{s.trend}</p>
             </div>
           ))}
         </div>
-        <div className="border-t border-white/[0.06] bg-brand-navy-mid/40 px-5 py-3 sm:px-6">
+        <div className="border-t border-white/[0.08] bg-brand-navy-mid/50 px-5 py-3 sm:px-6">
           <div className="flex flex-wrap items-center justify-between gap-2 text-xs text-brand-muted">
             <span>Scenario: Q3 rebalancing · CFO policies applied</span>
-            <span className="text-brand-violet/90">Synthetic + ERP signals</span>
+            <span>Synthetic + ERP signals</span>
           </div>
         </div>
       </GlassCard>

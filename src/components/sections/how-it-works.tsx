@@ -1,5 +1,6 @@
 import { PageSection } from "@/components/page-section";
 import { SectionHeading } from "@/components/section-heading";
+import { GlassCard } from "@/components/ui/glass-card";
 
 const capabilities = [
   {
@@ -29,7 +30,7 @@ export function HowItWorksSection() {
     <PageSection
       id="how-it-works"
       aria-labelledby="how-heading"
-      className="border-t border-white/[0.06] bg-[linear-gradient(180deg,transparent,rgba(56,189,248,0.04))] py-20 sm:py-24 lg:py-28"
+      className="border-t border-white/[0.06] bg-wash-section py-20 sm:py-24 lg:py-28"
     >
       <div className="mx-auto max-w-6xl space-y-12 px-4 sm:px-6 lg:px-8">
         <SectionHeading
@@ -40,14 +41,13 @@ export function HowItWorksSection() {
         />
         <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {capabilities.map((c) => (
-            <li
-              key={c.title}
-              className="rounded-2xl border border-white/[0.08] bg-white/[0.03] p-5 backdrop-blur-md"
-            >
-              <h3 className="text-sm font-semibold text-brand-soft">{c.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-brand-muted">
-                {c.body}
-              </p>
+            <li key={c.title}>
+              <GlassCard as="article" className="h-full p-5">
+                <h3 className="text-sm font-semibold text-white">{c.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-brand-muted">
+                  {c.body}
+                </p>
+              </GlassCard>
             </li>
           ))}
         </ul>

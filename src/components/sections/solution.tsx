@@ -1,5 +1,6 @@
 import { PageSection } from "@/components/page-section";
 import { SectionHeading } from "@/components/section-heading";
+import { GlassCard } from "@/components/ui/glass-card";
 
 const steps = [
   {
@@ -25,7 +26,7 @@ export function SolutionSection() {
     <PageSection
       id="solution"
       aria-labelledby="solution-heading"
-      className="border-t border-white/[0.06] bg-[linear-gradient(180deg,rgba(10,18,34,0.5),transparent)] py-20 sm:py-24 lg:py-28"
+      className="border-t border-white/[0.06] bg-fade-navy-down py-20 sm:py-24 lg:py-28"
     >
       <div className="mx-auto max-w-6xl space-y-14 px-4 sm:px-6 lg:px-8">
         <SectionHeading
@@ -35,23 +36,18 @@ export function SolutionSection() {
         />
         <ol className="grid gap-6 lg:grid-cols-2">
           {steps.map((step, i) => (
-            <li
-              key={step.title}
-              className="relative rounded-2xl border border-white/[0.08] bg-white/[0.03] p-6 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.04)] backdrop-blur-md"
-            >
-              <div className="flex gap-5">
-                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-brand-cyan/30 bg-brand-cyan/[0.08] text-sm font-bold text-brand-cyan">
+            <li key={step.title}>
+              <GlassCard as="article" className="flex h-full flex-col sm:flex-row sm:items-start sm:gap-5">
+                <span className="mb-4 flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-brand-cyan/35 bg-brand-cyan/[0.07] text-sm font-bold text-brand-cyan sm:mb-0">
                   {i + 1}
                 </span>
                 <div>
-                  <h3 className="text-lg font-semibold text-brand-soft">
-                    {step.title}
-                  </h3>
+                  <h3 className="text-lg font-semibold text-white">{step.title}</h3>
                   <p className="mt-2 text-sm leading-relaxed text-brand-muted">
                     {step.body}
                   </p>
                 </div>
-              </div>
+              </GlassCard>
             </li>
           ))}
         </ol>

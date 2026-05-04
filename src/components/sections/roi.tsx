@@ -38,7 +38,7 @@ export function RoiSection() {
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {metrics.map((m) => (
             <GlassCard key={m.title} as="article" className="flex flex-col">
-              <h3 className="text-base font-semibold text-brand-soft">{m.title}</h3>
+              <h3 className="text-base font-semibold text-white">{m.title}</h3>
               <p className="mt-3 flex-1 text-sm leading-relaxed text-brand-muted">
                 {m.body}
               </p>
@@ -46,7 +46,7 @@ export function RoiSection() {
           ))}
         </div>
         <GlassCard className="mx-auto max-w-3xl text-center">
-          <p className="text-sm font-medium text-brand-soft">
+          <p className="text-sm font-medium text-white">
             Model a 90-day cash unlock scenario using your current inventory data.
           </p>
           <p className="mt-2 text-sm text-brand-muted">

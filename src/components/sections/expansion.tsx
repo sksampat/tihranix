@@ -6,7 +6,7 @@ export function ExpansionSection() {
     <PageSection
       id="roadmap"
       aria-labelledby="expansion-heading"
-      className="border-t border-white/[0.06] bg-[linear-gradient(180deg,rgba(167,139,250,0.05),transparent)] py-20 sm:py-24 lg:py-28"
+      className="border-t border-white/[0.06] bg-wash-section-violet py-20 sm:py-24 lg:py-28"
     >
       <div className="mx-auto max-w-3xl space-y-8 px-4 text-center sm:px-6 lg:px-8">
         <SectionHeading

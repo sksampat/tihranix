@@ -7,7 +7,7 @@ export function RegisterSection() {
     <PageSection
       id="assessment"
       aria-labelledby="register-heading"
-      className="border-t border-white/[0.06] bg-[#050a12] py-20 sm:py-24 lg:py-28"
+      className="border-t border-white/[0.06] bg-brand-navy-deep py-20 sm:py-24 lg:py-28"
     >
       <div className="mx-auto max-w-3xl space-y-10 px-4 sm:px-6 lg:px-8">
         <SectionHeading

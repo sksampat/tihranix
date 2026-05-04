@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import { primaryCtaBaseClass } from "@/components/ui/primary-cta-styles";
 
 type Variant = "primary" | "secondary";
 
@@ -10,15 +11,8 @@ type ButtonLinkProps = {
   onClick?: () => void;
 };
 
-const base =
-  "inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3 text-sm font-semibold transition duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan";
-
-const variants: Record<Variant, string> = {
-  primary:
-    "bg-gradient-to-r from-brand-electric to-brand-cyan text-brand-navy shadow-[0_0_0_1px_rgba(255,255,255,0.08),0_12px_40px_-12px_rgba(34,211,238,0.35)] hover:scale-[1.02] hover:shadow-[0_0_32px_-4px_rgba(56,189,248,0.4),0_12px_40px_-12px_rgba(34,211,238,0.45)] active:scale-[0.99]",
-  secondary:
-    "border border-white/[0.14] bg-white/[0.04] text-brand-soft hover:border-brand-cyan/40 hover:bg-brand-cyan/[0.06]",
-};
+const secondaryClass =
+  "inline-flex items-center justify-center gap-2 rounded-xl border border-white/[0.1] bg-white/[0.03] px-5 py-3 text-sm font-semibold tracking-tight text-white shadow-[inset_0_1px_0_0_rgb(255_255_255/0.04)] transition-[border-color,background-color,box-shadow] duration-200 hover:border-brand-cyan/35 hover:bg-brand-cyan/[0.06] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan";
 
 export function ButtonLink({
   href,
@@ -27,12 +21,13 @@ export function ButtonLink({
   className = "",
   onClick,
 }: ButtonLinkProps) {
+  const merged =
+    variant === "primary"
+      ? `${primaryCtaBaseClass} ${className}`
+      : `${secondaryClass} ${className}`;
+
   return (
-    <a
-      href={href}
-      onClick={onClick}
-      className={`${base} ${variants[variant]} ${className}`}
-    >
+    <a href={href} onClick={onClick} className={merged}>
       {children}
     </a>
   );
