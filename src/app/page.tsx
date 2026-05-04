@@ -3,10 +3,11 @@ import { Footer } from "@/components/footer";
 import { HeroSection } from "@/components/sections/hero";
 import { ProblemSection } from "@/components/sections/problem";
 import { SolutionSection } from "@/components/sections/solution";
-import { ArchitectureSection } from "@/components/sections/architecture";
-import { OutcomesSection } from "@/components/sections/outcomes";
-import { UseCasesSection } from "@/components/sections/use-cases";
+import { RoiSection } from "@/components/sections/roi";
 import { HowItWorksSection } from "@/components/sections/how-it-works";
+import { PersonaSection } from "@/components/sections/persona";
+import { ExpansionSection } from "@/components/sections/expansion";
+import { FinalCtaSection } from "@/components/sections/final-cta";
 import { RegisterSection } from "@/components/sections/register";
 
 export default function Home() {
@@ -17,10 +18,11 @@ export default function Home() {
         <HeroSection />
         <ProblemSection />
         <SolutionSection />
-        <ArchitectureSection />
-        <OutcomesSection />
-        <UseCasesSection />
+        <RoiSection />
         <HowItWorksSection />
+        <PersonaSection />
+        <ExpansionSection />
+        <FinalCtaSection />
         <RegisterSection />
       </main>
       <Footer />

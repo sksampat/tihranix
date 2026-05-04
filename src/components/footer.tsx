@@ -1,20 +1,21 @@
 import { SiteLogo } from "@/components/site-logo";
 
 const footerLinks = [
-  { href: "#top", label: "About" },
-  { href: "#use-cases", label: "Use Cases" },
-  { href: "#register", label: "Register Interest" },
+  { href: "#top", label: "Home" },
+  { href: "#solution", label: "Platform" },
+  { href: "#roi", label: "ROI" },
+  { href: "#assessment", label: "Assessment" },
   { href: "mailto:hello@tihranix.ai", label: "Contact" },
 ] as const;
 
 export function Footer() {
   return (
-    <footer className="border-t border-white/[0.06] bg-[#070d18]">
+    <footer className="border-t border-white/[0.06] bg-[#040810]">
       <div className="mx-auto flex max-w-6xl flex-col gap-10 px-4 py-14 sm:px-6 lg:flex-row lg:items-start lg:justify-between lg:px-8">
         <div className="max-w-md space-y-4">
           <SiteLogo size="sm" />
           <p className="text-sm leading-relaxed text-brand-muted">
-            Optimize Operations. Unlock Capital.
+            Free up cash trapped in dead inventory — without hurting service levels.
           </p>
         </div>
         <nav

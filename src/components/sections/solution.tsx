@@ -2,17 +2,22 @@ import { PageSection } from "@/components/page-section";
 import { SectionHeading } from "@/components/section-heading";
 
 const steps = [
-  { label: "Understand", detail: "Unify operational context across systems." },
-  { label: "Diagnose", detail: "Surface inefficiencies, variance, and constraints." },
   {
-    label: "Improve Decisions",
-    detail: "Evaluate trade-offs with clear, defensible recommendations.",
+    title: "Detect dead and slow-moving SKUs",
+    body: "Continuous identification across regions, channels, and categories—aligned to your definitions of non-movement and aging.",
   },
   {
-    label: "Coordinate Execution",
-    detail: "Orchestrate workflows and handoffs across teams and tools.",
+    title: "Simulate liquidation and reallocation options",
+    body: "Stress-test channels, price ladders, bundles, and transfers before capital hits the P&L.",
   },
-  { label: "Optimize", detail: "Tighten the loop with measurable outcomes." },
+  {
+    title: "Recommend margin-safe actions",
+    body: "Ranked moves that respect margin floors, brand constraints, and service targets—not generic clearance rules.",
+  },
+  {
+    title: "Learn from executed outcomes",
+    body: "Closed-loop feedback tightens forecasts and recommendations as actions roll through finance and operations.",
+  },
 ] as const;
 
 export function SolutionSection() {
@@ -20,35 +25,33 @@ export function SolutionSection() {
     <PageSection
       id="solution"
       aria-labelledby="solution-heading"
-      className="border-y border-white/[0.06] bg-[linear-gradient(180deg,rgba(255,255,255,0.02),transparent)] py-20 sm:py-24 lg:py-28"
+      className="border-t border-white/[0.06] bg-[linear-gradient(180deg,rgba(10,18,34,0.5),transparent)] py-20 sm:py-24 lg:py-28"
     >
       <div className="mx-auto max-w-6xl space-y-14 px-4 sm:px-6 lg:px-8">
         <SectionHeading
           headingId="solution-heading"
-          title="Turning complexity into coordinated execution."
-          description="A closed loop from operational reality to action—designed for enterprises where performance is won or lost in execution, not slides."
+          eyebrow="Dead inventory liquidation engine"
+          title="From inventory visibility to autonomous capital action."
         />
-        <ol className="grid gap-4 lg:grid-cols-5">
-          {steps.map((s, i) => (
+        <ol className="grid gap-6 lg:grid-cols-2">
+          {steps.map((step, i) => (
             <li
-              key={s.label}
-              className="relative rounded-2xl border border-white/[0.08] bg-white/[0.03] p-5 backdrop-blur-md"
+              key={step.title}
+              className="relative rounded-2xl border border-white/[0.08] bg-white/[0.03] p-6 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.04)] backdrop-blur-md"
             >
-              <div className="mb-3 flex items-center gap-2">
-                <span className="flex h-8 w-8 items-center justify-center rounded-full border border-white/[0.1] bg-[#0B1220]/80 text-xs font-semibold text-brand-green">
+              <div className="flex gap-5">
+                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-brand-cyan/30 bg-brand-cyan/[0.08] text-sm font-bold text-brand-cyan">
                   {i + 1}
                 </span>
-                {i < steps.length - 1 ? (
-                  <span
-                    className="hidden h-px flex-1 bg-gradient-to-r from-brand-accent/50 to-brand-teal/30 lg:block"
-                    aria-hidden
-                  />
-                ) : null}
+                <div>
+                  <h3 className="text-lg font-semibold text-brand-soft">
+                    {step.title}
+                  </h3>
+                  <p className="mt-2 text-sm leading-relaxed text-brand-muted">
+                    {step.body}
+                  </p>
+                </div>
               </div>
-              <h3 className="text-base font-semibold text-brand-soft">{s.label}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-brand-muted">
-                {s.detail}
-              </p>
             </li>
           ))}
         </ol>

@@ -6,28 +6,29 @@ import { ButtonLink } from "@/components/ui/button-link";
 
 const links = [
   { href: "#problem", label: "Problem" },
-  { href: "#solution", label: "Solution" },
-  { href: "#architecture", label: "Architecture" },
-  { href: "#use-cases", label: "Use Cases" },
-  { href: "#register", label: "Register Interest" },
+  { href: "#solution", label: "Platform" },
+  { href: "#roi", label: "ROI" },
+  { href: "#how-it-works", label: "How it works" },
+  { href: "#personas", label: "Personas" },
+  { href: "#roadmap", label: "Roadmap" },
 ] as const;
 
 export function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-white/[0.06] bg-brand-navy/80 backdrop-blur-xl">
+    <header className="sticky top-0 z-50 border-b border-white/[0.06] bg-brand-navy/85 backdrop-blur-xl">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-8">
         <a
           href="#top"
-          className="rounded-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-accent"
+          className="rounded-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan"
           aria-label="Tihranix home"
         >
           <SiteLogo size="md" />
         </a>
 
         <nav
-          className="hidden items-center gap-8 md:flex"
+          className="hidden items-center gap-7 lg:flex"
           aria-label="Primary"
         >
           {links.map((l) => (
@@ -41,15 +42,15 @@ export function Navbar() {
           ))}
         </nav>
 
-        <div className="hidden md:block">
-          <ButtonLink href="#register" variant="primary" className="px-4 py-2.5">
-            Register Interest
+        <div className="hidden lg:block">
+          <ButtonLink href="#assessment" variant="primary" className="px-4 py-2.5">
+            Cash unlock assessment
           </ButtonLink>
         </div>
 
         <button
           type="button"
-          className="inline-flex items-center justify-center rounded-lg border border-white/[0.1] p-2 text-brand-soft md:hidden"
+          className="inline-flex items-center justify-center rounded-lg border border-white/[0.1] p-2 text-brand-soft lg:hidden"
           aria-expanded={open}
           aria-controls="mobile-nav"
           onClick={() => setOpen((v) => !v)}
@@ -76,7 +77,7 @@ export function Navbar() {
       {open ? (
         <div
           id="mobile-nav"
-          className="border-t border-white/[0.06] bg-brand-navy/95 px-4 py-4 md:hidden"
+          className="border-t border-white/[0.06] bg-brand-navy/95 px-4 py-4 lg:hidden"
         >
           <div className="flex flex-col gap-3">
             {links.map((l) => (
@@ -90,12 +91,12 @@ export function Navbar() {
               </a>
             ))}
             <ButtonLink
-              href="#register"
+              href="#assessment"
               variant="primary"
               className="mt-2 w-full"
               onClick={() => setOpen(false)}
             >
-              Register Interest
+              Cash unlock assessment
             </ButtonLink>
           </div>
         </div>

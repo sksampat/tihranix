@@ -4,20 +4,16 @@ import { GlassCard } from "@/components/ui/glass-card";
 
 const cards = [
   {
-    title: "Fragmented Systems",
-    body: "Operational truth is split across ERPs, fleet tools, warehouses, and spreadsheets—making end-to-end performance hard to see and harder to improve.",
+    title: "Trapped cash",
+    body: "Non-movers and slow-movers sit on the balance sheet while opportunity cost compounds—often without a single source of truth across finance and operations.",
   },
   {
-    title: "Manual Coordination",
-    body: "Teams spend cycles reconciling data, chasing updates, and bridging gaps between systems instead of running the business.",
+    title: "Margin leakage",
+    body: "Fire-sale discounts and reactive promotions erode margin when liquidation is decoupled from pricing, assortment, and channel strategy.",
   },
   {
-    title: "Slow Decisions",
-    body: "Trade-offs sit in queues while exceptions accumulate—delaying the moves that release capacity and capital.",
-  },
-  {
-    title: "Hidden Capital Inefficiency",
-    body: "Working capital and asset utilization leak through process friction, variability, and misaligned execution—not only through pricing or procurement.",
+    title: "Fragmented decisions",
+    body: "Finance sees the cash story, supply chain sees service risk, and commercial sees price—yet scenario modeling rarely lands in one governed decision loop.",
   },
 ] as const;
 
@@ -28,16 +24,17 @@ export function ProblemSection() {
       aria-labelledby="problem-heading"
       className="py-20 sm:py-24 lg:py-28"
     >
-      <div className="mx-auto max-w-6xl space-y-12 px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-6xl space-y-14 px-4 sm:px-6 lg:px-8">
         <SectionHeading
           headingId="problem-heading"
-          title="Operational inefficiency is hidden across disconnected systems."
+          title="Inventory is where cash goes to sleep."
+          description="Excess and slow-moving stock quietly traps millions in working capital. Finance teams see the cash impact, supply chain teams see the operational risk, and commercial teams see margin pressure — but decisions remain fragmented."
         />
-        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-5 md:grid-cols-3">
           {cards.map((c) => (
-            <GlassCard key={c.title} as="article">
+            <GlassCard key={c.title} as="article" className="flex flex-col">
               <h3 className="text-lg font-semibold text-brand-soft">{c.title}</h3>
-              <p className="mt-3 text-sm leading-relaxed text-brand-muted">
+              <p className="mt-3 flex-1 text-sm leading-relaxed text-brand-muted">
                 {c.body}
               </p>
             </GlassCard>

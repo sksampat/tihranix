@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import type { ReactNode } from "react";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 
@@ -9,14 +10,14 @@ const plusJakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Tihranix.ai — Optimize Operations. Unlock Capital.",
+  title: "Tihranix — Free cash trapped in dead inventory",
   description:
-    "Tihranix helps enterprises identify inefficiencies, improve decisions, and coordinate execution across fragmented systems—driving measurable operational and financial impact.",
+    "Tihranix autonomously identifies slow-moving and non-moving inventory, simulates liquidation strategies, and recommends actions that unlock working capital without damaging margins or service levels.",
   metadataBase: new URL("https://tihranix.ai"),
   openGraph: {
-    title: "Tihranix.ai — Optimize Operations. Unlock Capital.",
+    title: "Tihranix — Dead Inventory Liquidation Engine",
     description:
-      "Enterprise agentic AI for coordinated execution, operational optimization, and capital performance.",
+      "Enterprise AI for autonomous capital and operational optimization. Unlock working capital from dead and slow-moving inventory.",
     siteName: "Tihranix",
     type: "website",
   },
@@ -25,7 +26,7 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: ReactNode;
 }>) {
   return (
     <html lang="en" className={`${plusJakarta.variable} h-full scroll-smooth`}>

@@ -1,13 +1,27 @@
 import { PageSection } from "@/components/page-section";
 import { SectionHeading } from "@/components/section-heading";
 
-const flow = [
-  "Connect Systems",
-  "Analyze Operations",
-  "Identify Inefficiencies",
-  "Recommend Actions",
-  "Coordinate Execution",
-  "Measure Impact",
+const capabilities = [
+  {
+    title: "Raw + synthetic data modeling",
+    body: "Blend enterprise signals with structured scenarios so finance and supply chain share one operational picture of inventory risk.",
+  },
+  {
+    title: "Business policies and KPI constraints",
+    body: "Encode margin floors, channel rules, and service targets so recommendations stay inside how your company actually runs.",
+  },
+  {
+    title: "Scenario simulation",
+    body: "Compare liquidation paths, timing, and mix before capital and customer experience move in production.",
+  },
+  {
+    title: "Action recommendations",
+    body: "Prioritized moves with expected cash, margin, and service impact—ready for executive review and governed execution.",
+  },
+  {
+    title: "Closed-loop feedback learning",
+    body: "Outcomes refine the next cycle of detection and simulation, so the engine improves as decisions land in the business.",
+  },
 ] as const;
 
 export function HowItWorksSection() {
@@ -15,36 +29,28 @@ export function HowItWorksSection() {
     <PageSection
       id="how-it-works"
       aria-labelledby="how-heading"
-      className="border-t border-white/[0.06] bg-[linear-gradient(180deg,transparent,rgba(0,194,168,0.04))] py-20 sm:py-24 lg:py-28"
+      className="border-t border-white/[0.06] bg-[linear-gradient(180deg,transparent,rgba(56,189,248,0.04))] py-20 sm:py-24 lg:py-28"
     >
       <div className="mx-auto max-w-6xl space-y-12 px-4 sm:px-6 lg:px-8">
         <SectionHeading
           headingId="how-heading"
           align="center"
-          title="From signal to action."
-          description="A straight-line narrative from operational reality to coordinated outcomes—built for auditability and operator trust."
+          title="Built for governed, closed-loop decisions."
+          description="Tihranix is designed for enterprises that need audit-friendly narratives: clear inputs, explicit constraints, and measurable outcomes—without turning stakeholders into data engineers."
         />
-        <div className="relative">
-          <div
-            className="pointer-events-none absolute left-0 right-0 top-1/2 hidden h-px -translate-y-1/2 bg-gradient-to-r from-transparent via-white/10 to-transparent lg:block"
-            aria-hidden
-          />
-          <ol className="grid gap-4 lg:grid-cols-6">
-            {flow.map((label, i) => (
-              <li
-                key={label}
-                className="relative rounded-2xl border border-white/[0.08] bg-white/[0.03] p-4 text-center backdrop-blur-md"
-              >
-                <div className="mx-auto mb-3 flex h-9 w-9 items-center justify-center rounded-full border border-white/[0.12] bg-[#0B1220]/80 text-xs font-semibold text-brand-teal">
-                  {i + 1}
-                </div>
-                <p className="text-xs font-semibold leading-snug text-brand-soft sm:text-sm">
-                  {label}
-                </p>
-              </li>
-            ))}
-          </ol>
-        </div>
+        <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {capabilities.map((c) => (
+            <li
+              key={c.title}
+              className="rounded-2xl border border-white/[0.08] bg-white/[0.03] p-5 backdrop-blur-md"
+            >
+              <h3 className="text-sm font-semibold text-brand-soft">{c.title}</h3>
+              <p className="mt-2 text-sm leading-relaxed text-brand-muted">
+                {c.body}
+              </p>
+            </li>
+          ))}
+        </ul>
       </div>
     </PageSection>
   );

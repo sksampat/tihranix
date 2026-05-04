@@ -28,17 +28,18 @@ export function InterestForm() {
         aria-live="polite"
       >
         <p className="text-lg font-semibold text-brand-soft">
-          Thanks — your interest has been registered.
+          Thank you — we received your assessment request.
         </p>
         <p className="mt-3 text-sm text-brand-muted">
-          Our team will follow up when capacity opens for new partnerships.
+          Our team will follow up with next steps and data requirements for a
+          governed cash unlock scenario.
         </p>
       </div>
     );
   }
 
   const inputClass =
-    "mt-1.5 w-full rounded-xl border border-white/[0.1] bg-[#0B1220]/60 px-4 py-3 text-sm text-brand-soft placeholder:text-brand-muted/60 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.03)] outline-none transition focus:border-brand-accent/50 focus:ring-2 focus:ring-brand-teal/20";
+    "mt-1.5 w-full rounded-xl border border-white/[0.1] bg-brand-navy/60 px-4 py-3 text-sm text-brand-soft placeholder:text-brand-muted/60 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.03)] outline-none transition focus:border-brand-cyan/45 focus:ring-2 focus:ring-brand-cyan/15";
 
   return (
     <form
@@ -80,7 +81,7 @@ export function InterestForm() {
       </div>
       <div className="sm:col-span-1">
         <label htmlFor="interest-email" className="text-sm font-medium text-brand-soft">
-          Work Email
+          Work email
         </label>
         <input
           id="interest-email"
@@ -110,7 +111,7 @@ export function InterestForm() {
       </div>
       <div className="sm:col-span-2">
         <label htmlFor="interest-area" className="text-sm font-medium text-brand-soft">
-          Area of Interest
+          Inventory / scope
         </label>
         <input
           id="interest-area"
@@ -120,12 +121,12 @@ export function InterestForm() {
           value={values.area}
           onChange={(e) => setValues((v) => ({ ...v, area: e.target.value }))}
           className={inputClass}
-          placeholder="e.g. fleet operations, working capital, manufacturing"
+          placeholder="e.g. retail apparel NA, industrial MRO, 12 DCs"
         />
       </div>
       <div className="sm:col-span-2">
         <label htmlFor="interest-message" className="text-sm font-medium text-brand-soft">
-          Message
+          Context (optional)
         </label>
         <textarea
           id="interest-message"
@@ -136,14 +137,15 @@ export function InterestForm() {
             setValues((v) => ({ ...v, message: e.target.value }))
           }
           className={`${inputClass} resize-y min-h-[120px]`}
+          placeholder="Dead inventory pain points, policy constraints, or timeline."
         />
       </div>
       <div className="sm:col-span-2">
         <button
           type="submit"
-          className="w-full rounded-xl bg-gradient-to-r from-[#22C55E] to-[#00C2A8] px-5 py-3.5 text-sm font-semibold text-[#0B1220] shadow-[0_0_0_1px_rgba(255,255,255,0.06),0_12px_40px_-12px_rgba(0,194,168,0.45)] transition hover:scale-[1.01] hover:shadow-[0_0_28px_-4px_rgba(74,222,128,0.35)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-accent sm:w-auto"
+          className="w-full rounded-xl bg-gradient-to-r from-brand-electric to-brand-cyan px-5 py-3.5 text-sm font-semibold text-brand-navy shadow-[0_0_0_1px_rgba(255,255,255,0.08),0_12px_40px_-12px_rgba(34,211,238,0.35)] transition hover:scale-[1.01] hover:shadow-[0_0_28px_-4px_rgba(56,189,248,0.35)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan sm:w-auto"
         >
-          Register Interest
+          Start a Cash Unlock Assessment
         </button>
       </div>
     </form>

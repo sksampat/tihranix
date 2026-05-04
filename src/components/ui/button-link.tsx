@@ -11,13 +11,13 @@ type ButtonLinkProps = {
 };
 
 const base =
-  "inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3 text-sm font-semibold transition duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-accent";
+  "inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3 text-sm font-semibold transition duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan";
 
 const variants: Record<Variant, string> = {
   primary:
-    "bg-gradient-to-r from-[#22C55E] to-[#00C2A8] text-[#0B1220] shadow-[0_0_0_1px_rgba(255,255,255,0.06),0_12px_40px_-12px_rgba(0,194,168,0.45)] hover:scale-[1.02] hover:shadow-[0_0_28px_-4px_rgba(74,222,128,0.35),0_12px_40px_-12px_rgba(0,194,168,0.5)] active:scale-[0.99]",
+    "bg-gradient-to-r from-brand-electric to-brand-cyan text-brand-navy shadow-[0_0_0_1px_rgba(255,255,255,0.08),0_12px_40px_-12px_rgba(34,211,238,0.35)] hover:scale-[1.02] hover:shadow-[0_0_32px_-4px_rgba(56,189,248,0.4),0_12px_40px_-12px_rgba(34,211,238,0.45)] active:scale-[0.99]",
   secondary:
-    "border border-[#22C55E] bg-transparent text-brand-green hover:bg-[#22C55E]/10",
+    "border border-white/[0.14] bg-white/[0.04] text-brand-soft hover:border-brand-cyan/40 hover:bg-brand-cyan/[0.06]",
 };
 
 export function ButtonLink({
