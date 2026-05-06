@@ -13,11 +13,15 @@ export function ContactSection() {
         <SectionHeading
           headingId="contact-heading"
           align="center"
-          eyebrow="Contact us"
-          title="Ready to unlock trapped working capital?"
-          description="Tell us about your inventory challenges, and we’ll help estimate where cash may be trapped across your operations."
+          eyebrow="Design partnership"
+          title="Explore a Tihranix design partnership."
+          description="We’re working with inventory-heavy teams that want to identify trapped working capital, evaluate governed action paths, and modernize inventory-capital decisions."
         />
         <ContactForm />
+        <p className="text-center text-xs leading-relaxed text-brand-muted">
+          Built for finance, supply chain, and operations teams managing complex inventory
+          decisions.
+        </p>
         <p className="text-center text-sm text-brand-muted">
           Email:{" "}
           <a

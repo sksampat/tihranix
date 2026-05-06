@@ -29,8 +29,8 @@ export function ContactForm() {
             Thanks — your request has been received.
           </p>
           <p className="mt-3 text-sm text-brand-muted">
-            We will follow up to schedule a demo and align on data scope for a governed
-            working-capital view of your inventory.
+            We will follow up on a design partner conversation and align on inventory
+            scope, data access, and next steps.
           </p>
         </GlassCard>
       </div>
@@ -103,7 +103,7 @@ export function ContactForm() {
       </div>
       <div className="sm:col-span-2">
         <button type="submit" className={`${primaryCtaBaseClass} w-full sm:w-auto`}>
-          Request a demo
+          Request a Design Partner Conversation
         </button>
       </div>
     </form>

@@ -3,6 +3,7 @@ import { SiteLogo } from "@/components/site-logo";
 const footerLinks = [
   { href: "#top", label: "Home" },
   { href: "#product", label: "Product" },
+  { href: "#agentic-decision", label: "System" },
   { href: "#outcomes", label: "Outcomes" },
   { href: "#roadmap", label: "Roadmap" },
   { href: "#assessment", label: "Contact" },
@@ -16,8 +17,9 @@ export function Footer() {
         <div className="max-w-md space-y-4">
           <SiteLogo size="sm" />
           <p className="text-sm leading-relaxed text-brand-muted">
-            A governed decision layer for inventory capital. Starts with dead and
-            slow-moving stock; expands into continuous, constrained inventory decisions.
+            Governed inventory-capital decisions under constraint. Starts with dead and
+            slow-moving stock; extends into continuous optimization and constrained
+            allocation across the network.
           </p>
         </div>
         <nav

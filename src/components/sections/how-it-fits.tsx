@@ -14,7 +14,7 @@ export function HowItFitsSection() {
           headingId="fits-heading"
           align="center"
           title="Works with the systems you already run."
-          description="Tihranix is designed to sit on top of existing ERP, planning, and warehouse workflows. It gives supply chain and finance a governed decision layer without forcing a rip-and-replace transformation."
+          description="Tihranix is designed to sit on top of existing ERP, planning, and warehouse workflows. It gives supply chain and finance a governed operating layer for inventory-capital decisions—without forcing a rip-and-replace transformation."
         />
         <GlassCard className="mx-auto max-w-3xl border-brand-cyan/15 text-center">
           <p className="text-sm leading-relaxed text-brand-muted">

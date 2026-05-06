@@ -14,7 +14,7 @@ export function HeroSection() {
       <div className="relative mx-auto grid max-w-6xl gap-12 px-4 py-20 sm:px-6 lg:grid-cols-2 lg:items-center lg:gap-16 lg:px-8 lg:py-28">
         <div className="space-y-8">
           <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-brand-cyan">
-            Governed decision layer for inventory capital
+            Inventory-capital decisions under business constraints
           </p>
           <h1 className="text-4xl font-semibold tracking-tight text-white sm:text-5xl lg:text-[2.85rem] lg:leading-[1.1]">
             Tihranix turns dead and slow-moving inventory into governed working-capital
@@ -26,8 +26,8 @@ export function HeroSection() {
             margin, or policy constraints.
           </p>
           <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
-            <ButtonLink href="#assessment" variant="primary">
-              Request a demo
+            <ButtonLink href="#assessment" variant="primary" className="text-center sm:text-left">
+              Request a Design Partner Conversation
             </ButtonLink>
             <ButtonLink href="#product" variant="secondary">
               See how it works

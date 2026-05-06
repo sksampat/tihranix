@@ -31,7 +31,7 @@ export function ProductSection() {
       <div className="mx-auto max-w-6xl space-y-14 px-4 sm:px-6 lg:px-8">
         <SectionHeading
           headingId="product-heading"
-          title="A continuous decision layer for inventory capital."
+          title="A continuous operating layer for governed inventory-capital decisions."
           description="Tihranix runs continuously on top of your inventory, planning, and warehouse data to identify dead and slow-moving stock, evaluate recovery scenarios, and recommend governed actions with explicit business impact."
         />
         <div className="grid gap-5 sm:grid-cols-2">

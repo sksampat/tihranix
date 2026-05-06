@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Tihranix — Inventory capital decision engine",
     description:
-      "Enterprise decision layer for high-stakes inventory under constraint. Starts with dead and slow-moving inventory; extends into continuous policy optimization and constrained allocation.",
+      "Governed inventory-capital decisions under constraint. Starts with dead and slow-moving inventory; extends into continuous optimization and constrained allocation across supply chain and finance.",
     siteName: "Tihranix",
     type: "website",
   },

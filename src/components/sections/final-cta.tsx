@@ -28,8 +28,8 @@ export function FinalCtaSection() {
               chain and finance.
             </p>
             <div className="flex justify-center pt-2">
-              <ButtonLink href="#assessment" variant="primary" className="px-8 py-3.5">
-                Request a demo
+              <ButtonLink href="#assessment" variant="primary" className="px-6 py-3.5 text-sm sm:px-8">
+                Request a Design Partner Conversation
               </ButtonLink>
             </div>
           </div>

@@ -3,32 +3,32 @@ import { GlassCard } from "@/components/ui/glass-card";
 const stats = [
   {
     label: "Trapped inventory exposure",
-    value: "$18.2M",
-    detail: "412 SKUs · 6 sites",
+    value: "Elevated",
+    detail: "Cross-network view",
     trend: "Rolling detection",
   },
   {
     label: "Recovery paths modeled",
-    value: "84",
+    value: "Multi-path",
     detail: "Redeploy · reprice · bundle · scrap",
     trend: "Constraint-aware",
   },
   {
-    label: "Net working capital (governed)",
-    value: "+$6.4M",
-    detail: "90-day window",
+    label: "Working capital posture",
+    value: "Under review",
+    detail: "Governed scenarios",
     trend: "Service floor held",
   },
   {
     label: "Decisions in approval queue",
-    value: "27",
+    value: "Active",
     detail: "Planner + finance",
     trend: "Audit trail attached",
   },
   {
     label: "Service vs. margin trade-off",
     value: "Balanced",
-    detail: "Fill rate ≥ 97.5%",
+    detail: "Within policy targets",
     trend: "Explicit guardrails",
   },
 ] as const;
@@ -68,7 +68,7 @@ export function HeroDashboardMockup() {
               <p className="text-[11px] font-medium uppercase tracking-wide text-brand-muted">
                 {s.label}
               </p>
-              <p className="mt-2 text-2xl font-semibold tracking-tight text-white sm:text-[1.65rem]">
+              <p className="mt-2 text-xl font-semibold tracking-tight text-white sm:text-[1.35rem]">
                 {s.value}
               </p>
               <p className="mt-1 text-xs text-brand-muted">{s.detail}</p>
