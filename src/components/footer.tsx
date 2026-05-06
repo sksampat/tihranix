@@ -2,10 +2,11 @@ import { SiteLogo } from "@/components/site-logo";
 
 const footerLinks = [
   { href: "#top", label: "Home" },
-  { href: "#solution", label: "Platform" },
-  { href: "#roi", label: "ROI" },
-  { href: "#assessment", label: "Assessment" },
-  { href: "mailto:contact@tihranix.ai", label: "Contact" },
+  { href: "#product", label: "Product" },
+  { href: "#outcomes", label: "Outcomes" },
+  { href: "#roadmap", label: "Roadmap" },
+  { href: "#assessment", label: "Contact" },
+  { href: "mailto:contact@tihranix.ai", label: "Email" },
 ] as const;
 
 export function Footer() {
@@ -15,7 +16,8 @@ export function Footer() {
         <div className="max-w-md space-y-4">
           <SiteLogo size="sm" />
           <p className="text-sm leading-relaxed text-brand-muted">
-            Free up cash trapped in dead inventory — without hurting service levels.
+            A governed decision layer for inventory capital. Starts with dead and
+            slow-moving stock; expands into continuous, constrained inventory decisions.
           </p>
         </div>
         <nav

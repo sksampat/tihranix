@@ -10,14 +10,15 @@ const plusJakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Tihranix — Free cash trapped in dead inventory",
+  title:
+    "Tihranix — Governed inventory capital decisions from dead and slow-moving stock",
   description:
-    "Tihranix autonomously identifies slow-moving and non-moving inventory, simulates liquidation strategies, and recommends actions that unlock working capital without damaging margins or service levels.",
+    "Tihranix continuously detects trapped inventory, simulates recovery paths, and recommends actions that unlock working capital without breaking service, margin, or policy constraints—then expands upstream into inventory capital optimization.",
   metadataBase: new URL("https://tihranix.ai"),
   openGraph: {
-    title: "Tihranix — Dead Inventory Liquidation Engine",
+    title: "Tihranix — Inventory capital decision engine",
     description:
-      "Enterprise AI for autonomous capital and operational optimization. Unlock working capital from dead and slow-moving inventory.",
+      "Enterprise decision layer for high-stakes inventory under constraint. Starts with dead and slow-moving inventory; extends into continuous policy optimization and constrained allocation.",
     siteName: "Tihranix",
     type: "website",
   },

@@ -15,6 +15,10 @@ export function SectionHeading({
   align = "left",
 }: SectionHeadingProps) {
   const alignClass = align === "center" ? "mx-auto text-center" : "";
+  const descClass =
+    align === "center"
+      ? "mx-auto max-w-2xl text-base leading-relaxed text-brand-muted lg:text-lg"
+      : "max-w-2xl text-base leading-relaxed text-brand-muted lg:text-lg";
   return (
     <div className={`max-w-3xl space-y-5 ${alignClass}`}>
       {eyebrow ? (
@@ -28,11 +32,7 @@ export function SectionHeading({
       >
         {title}
       </h2>
-      {description ? (
-        <p className="max-w-2xl text-base leading-relaxed text-brand-muted lg:text-lg">
-          {description}
-        </p>
-      ) : null}
+      {description ? <p className={descClass}>{description}</p> : null}
     </div>
   );
 }

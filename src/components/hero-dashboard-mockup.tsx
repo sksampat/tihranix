@@ -2,34 +2,34 @@ import { GlassCard } from "@/components/ui/glass-card";
 
 const stats = [
   {
-    label: "Dead inventory identified",
+    label: "Trapped inventory exposure",
     value: "$18.2M",
-    detail: "412 SKUs · 6 regions",
-    trend: "vs. prior quarter",
+    detail: "412 SKUs · 6 sites",
+    trend: "Rolling detection",
   },
   {
-    label: "Cash unlock potential",
-    value: "$6.4M",
-    detail: "90-day scenario",
-    trend: "Policy-constrained",
+    label: "Recovery paths modeled",
+    value: "84",
+    detail: "Redeploy · reprice · bundle · scrap",
+    trend: "Constraint-aware",
   },
   {
-    label: "Margin impact",
-    value: "+0.8 pts",
-    detail: "Net of discounts",
-    trend: "Simulated range",
+    label: "Net working capital (governed)",
+    value: "+$6.4M",
+    detail: "90-day window",
+    trend: "Service floor held",
   },
   {
-    label: "Recommended actions",
+    label: "Decisions in approval queue",
     value: "27",
-    detail: "Prioritized by ROI",
-    trend: "Ready for review",
+    detail: "Planner + finance",
+    trend: "Audit trail attached",
   },
   {
-    label: "Service level risk",
-    value: "Low",
+    label: "Service vs. margin trade-off",
+    value: "Balanced",
     detail: "Fill rate ≥ 97.5%",
-    trend: "Within guardrails",
+    trend: "Explicit guardrails",
   },
 ] as const;
 
@@ -51,14 +51,14 @@ export function HeroDashboardMockup() {
           <div className="flex flex-wrap items-center justify-between gap-3">
             <div>
               <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-brand-muted">
-                Dead inventory liquidation engine
+                Inventory capital decisions
               </p>
               <p className="mt-1 text-sm font-semibold text-white">
-                Capital unlock dashboard
+                Governed scenario workspace
               </p>
             </div>
             <span className="rounded-full border border-brand-cyan/30 bg-brand-cyan/[0.08] px-3 py-1 text-[11px] font-medium text-brand-cyan">
-              Live scenario
+              Continuous run
             </span>
           </div>
         </div>
@@ -78,8 +78,8 @@ export function HeroDashboardMockup() {
         </div>
         <div className="border-t border-white/[0.08] bg-brand-navy-mid/50 px-5 py-3 sm:px-6">
           <div className="flex flex-wrap items-center justify-between gap-2 text-xs text-brand-muted">
-            <span>Scenario: Q3 rebalancing · CFO policies applied</span>
-            <span>Synthetic + ERP signals</span>
+            <span>Service · margin · policy constraints applied</span>
+            <span>ERP + planning ingest</span>
           </div>
         </div>
       </GlassCard>

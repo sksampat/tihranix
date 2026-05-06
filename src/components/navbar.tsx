@@ -6,11 +6,9 @@ import { ButtonLink } from "@/components/ui/button-link";
 
 const links = [
   { href: "#problem", label: "Problem" },
-  { href: "#solution", label: "Platform" },
-  { href: "#roi", label: "ROI" },
-  { href: "#how-it-works", label: "How it works" },
-  { href: "#agentic-system", label: "Agentic system" },
-  { href: "#personas", label: "Personas" },
+  { href: "#product", label: "Product" },
+  { href: "#outcomes", label: "Outcomes" },
+  { href: "#how-it-fits", label: "How it fits" },
   { href: "#roadmap", label: "Roadmap" },
 ] as const;
 
@@ -45,7 +43,7 @@ export function Navbar() {
 
         <div className="hidden lg:block">
           <ButtonLink href="#assessment" variant="primary" className="px-4 py-2.5">
-            Cash unlock assessment
+            Request a demo
           </ButtonLink>
         </div>
 
@@ -97,7 +95,7 @@ export function Navbar() {
               className="mt-2 w-full"
               onClick={() => setOpen(false)}
             >
-              Cash unlock assessment
+              Request a demo
             </ButtonLink>
           </div>
         </div>
