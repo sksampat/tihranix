@@ -45,7 +45,7 @@ export function RoadmapSection() {
     <PageSection
       id="roadmap"
       aria-labelledby="roadmap-heading"
-      className="border-t border-white/[0.06] bg-wash-section-violet py-20 sm:py-24 lg:py-28"
+      className="border-t border-white/[0.08] bg-wash-section-violet py-20 sm:py-24 lg:py-28"
     >
       <div className="mx-auto max-w-6xl space-y-12 px-4 sm:px-6 lg:px-8">
         <SectionHeading
@@ -74,7 +74,7 @@ export function RoadmapSection() {
                   Adjacent · strategic
                 </p>
               )}
-              <h3 className="mt-3 text-base font-semibold leading-snug text-white">
+              <h3 className="mt-3 text-base font-semibold leading-snug text-brand-soft">
                 {p.title}
               </h3>
               <p className="mt-2 text-sm leading-snug text-brand-muted">{p.summary}</p>

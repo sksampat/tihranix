@@ -40,7 +40,7 @@ export function SiteLogo({
       />
       {showWordmark ? (
         <span
-          className={`font-semibold text-white ${textClass[size]}`}
+          className={`font-semibold text-brand-soft ${textClass[size]}`}
           style={{ fontFeatureSettings: '"ss01" 1' }}
         >
           TIHRANIX

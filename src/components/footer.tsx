@@ -12,7 +12,7 @@ const footerLinks = [
 
 export function Footer() {
   return (
-    <footer className="border-t border-white/[0.06] bg-brand-navy-deep">
+    <footer className="border-t border-white/[0.08] bg-brand-navy-deep">
       <div className="mx-auto flex max-w-6xl flex-col gap-10 px-4 py-14 sm:px-6 lg:flex-row lg:items-start lg:justify-between lg:px-8">
         <div className="max-w-md space-y-4">
           <SiteLogo size="sm" />
@@ -30,7 +30,7 @@ export function Footer() {
             <a
               key={l.label}
               href={l.href}
-              className="text-sm font-medium text-brand-muted transition hover:text-white"
+              className="text-sm font-medium text-brand-muted transition hover:text-brand-soft"
             >
               {l.label}
             </a>

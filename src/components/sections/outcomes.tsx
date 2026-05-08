@@ -37,7 +37,7 @@ export function OutcomesSection() {
         <div className="grid gap-5 sm:grid-cols-2">
           {outcomes.map((o) => (
             <GlassCard key={o.title} as="article" className="flex flex-col">
-              <h3 className="text-base font-semibold text-white">{o.title}</h3>
+              <h3 className="text-base font-semibold text-brand-soft">{o.title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-brand-muted">{o.body}</p>
             </GlassCard>
           ))}

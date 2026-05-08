@@ -9,14 +9,14 @@ const bullets = [
 
 export function HeroSection() {
   return (
-    <div className="relative overflow-hidden border-b border-white/[0.06]">
+    <div className="relative overflow-hidden border-b border-white/[0.08]">
       <div className="pointer-events-none absolute inset-0 bg-wash-hero" aria-hidden />
       <div className="relative mx-auto grid max-w-6xl gap-12 px-4 py-20 sm:px-6 lg:grid-cols-2 lg:items-center lg:gap-16 lg:px-8 lg:py-28">
         <div className="space-y-8">
           <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-brand-cyan">
             Inventory-capital decisions under business constraints
           </p>
-          <h1 className="text-4xl font-semibold tracking-tight text-white sm:text-5xl lg:text-[2.85rem] lg:leading-[1.1]">
+          <h1 className="text-4xl font-semibold tracking-tight text-brand-soft sm:text-5xl lg:text-[2.85rem] lg:leading-[1.1]">
             Tihranix turns dead and slow-moving inventory into governed working-capital
             decisions.
           </h1>

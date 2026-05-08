@@ -7,7 +7,7 @@ export function HowItFitsSection() {
     <PageSection
       id="how-it-fits"
       aria-labelledby="fits-heading"
-      className="border-t border-white/[0.06] bg-wash-section py-20 sm:py-24 lg:py-28"
+      className="border-t border-white/[0.08] bg-wash-section py-20 sm:py-24 lg:py-28"
     >
       <div className="mx-auto max-w-6xl space-y-10 px-4 sm:px-6 lg:px-8">
         <SectionHeading

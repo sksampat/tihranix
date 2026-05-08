@@ -25,7 +25,7 @@ export function ContactForm() {
     return (
       <div role="status" aria-live="polite">
         <GlassCard className="p-10 text-center">
-          <p className="text-lg font-semibold text-white">
+          <p className="text-lg font-semibold text-brand-soft">
             Thanks — your request has been received.
           </p>
           <p className="mt-3 text-sm text-brand-muted">
@@ -38,12 +38,12 @@ export function ContactForm() {
   }
 
   const inputClass =
-    "mt-1.5 w-full rounded-xl border border-white/[0.1] bg-brand-navy/50 px-4 py-3 text-sm text-white placeholder:text-brand-muted/55 shadow-[inset_0_1px_0_0_rgb(255_255_255/0.03)] outline-none transition focus:border-brand-cyan/40 focus:ring-2 focus:ring-brand-cyan/12";
+    "mt-1.5 w-full rounded-xl border border-white/[0.1] bg-brand-navy/50 px-4 py-3 text-sm text-brand-soft placeholder:text-brand-muted/55 shadow-[inset_0_1px_0_0_rgb(255_255_255/0.03)] outline-none transition focus:border-brand-cyan/40 focus:ring-2 focus:ring-brand-cyan/12";
 
   return (
     <form onSubmit={handleSubmit} className="grid gap-5 sm:grid-cols-2" noValidate>
       <div className="sm:col-span-1">
-        <label htmlFor="contact-name" className="text-sm font-medium text-white">
+        <label htmlFor="contact-name" className="text-sm font-medium text-brand-soft">
           Name
         </label>
         <input
@@ -58,7 +58,7 @@ export function ContactForm() {
         />
       </div>
       <div className="sm:col-span-1">
-        <label htmlFor="contact-company" className="text-sm font-medium text-white">
+        <label htmlFor="contact-company" className="text-sm font-medium text-brand-soft">
           Company
         </label>
         <input
@@ -73,7 +73,7 @@ export function ContactForm() {
         />
       </div>
       <div className="sm:col-span-2">
-        <label htmlFor="contact-email" className="text-sm font-medium text-white">
+        <label htmlFor="contact-email" className="text-sm font-medium text-brand-soft">
           Work Email
         </label>
         <input
@@ -88,7 +88,7 @@ export function ContactForm() {
         />
       </div>
       <div className="sm:col-span-2">
-        <label htmlFor="contact-message" className="text-sm font-medium text-white">
+        <label htmlFor="contact-message" className="text-sm font-medium text-brand-soft">
           Message
         </label>
         <textarea

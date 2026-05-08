@@ -26,7 +26,7 @@ export function ProductSection() {
     <PageSection
       id="product"
       aria-labelledby="product-heading"
-      className="border-t border-white/[0.06] bg-fade-navy-down py-20 sm:py-24 lg:py-28"
+      className="border-t border-white/[0.08] bg-fade-navy-down py-20 sm:py-24 lg:py-28"
     >
       <div className="mx-auto max-w-6xl space-y-14 px-4 sm:px-6 lg:px-8">
         <SectionHeading
@@ -38,7 +38,7 @@ export function ProductSection() {
           {capabilities.map((c) => (
             <GlassCard key={c.title} as="article" className="flex flex-col">
               <div className="mb-3 h-px w-12 bg-gradient-to-r from-brand-electric to-brand-cyan" />
-              <h3 className="text-lg font-semibold text-white">{c.title}</h3>
+              <h3 className="text-lg font-semibold text-brand-soft">{c.title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-brand-muted">
                 {c.body}
               </p>

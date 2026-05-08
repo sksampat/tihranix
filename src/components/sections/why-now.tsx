@@ -26,7 +26,7 @@ export function WhyNowSection() {
     <PageSection
       id="why-now"
       aria-labelledby="why-now-heading"
-      className="border-t border-white/[0.06] py-20 sm:py-24 lg:py-28"
+      className="border-t border-white/[0.08] py-20 sm:py-24 lg:py-28"
     >
       <div className="mx-auto max-w-6xl space-y-14 px-4 sm:px-6 lg:px-8">
         <SectionHeading
@@ -38,7 +38,7 @@ export function WhyNowSection() {
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {cards.map((c) => (
             <GlassCard key={c.title} as="article" className="flex flex-col">
-              <h3 className="text-base font-semibold text-white">{c.title}</h3>
+              <h3 className="text-base font-semibold text-brand-soft">{c.title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-brand-muted">{c.body}</p>
             </GlassCard>
           ))}

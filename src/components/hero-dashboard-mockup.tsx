@@ -53,7 +53,7 @@ export function HeroDashboardMockup() {
               <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-brand-muted">
                 Inventory capital decisions
               </p>
-              <p className="mt-1 text-sm font-semibold text-white">
+              <p className="mt-1 text-sm font-semibold text-brand-soft">
                 Governed scenario workspace
               </p>
             </div>
@@ -68,7 +68,7 @@ export function HeroDashboardMockup() {
               <p className="text-[11px] font-medium uppercase tracking-wide text-brand-muted">
                 {s.label}
               </p>
-              <p className="mt-2 text-xl font-semibold tracking-tight text-white sm:text-[1.35rem]">
+              <p className="mt-2 text-xl font-semibold tracking-tight text-brand-soft sm:text-[1.35rem]">
                 {s.value}
               </p>
               <p className="mt-1 text-xs text-brand-muted">{s.detail}</p>

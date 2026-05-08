@@ -66,7 +66,7 @@ export function AgenticDecisionSystemSection() {
     <PageSection
       id="agentic-decision"
       aria-labelledby="agentic-heading"
-      className="border-t border-white/[0.06] py-20 sm:py-24 lg:py-28"
+      className="border-t border-white/[0.08] py-20 sm:py-24 lg:py-28"
     >
       <div className="mx-auto max-w-6xl space-y-16 px-4 sm:px-6 lg:px-8">
         <SectionHeading
@@ -79,7 +79,7 @@ export function AgenticDecisionSystemSection() {
           {agents.map((a) => (
             <GlassCard key={a.title} as="article" className="flex h-full flex-col p-5">
               <div className="mb-3 h-px w-10 bg-gradient-to-r from-brand-electric to-brand-cyan" />
-              <h3 className="text-sm font-semibold text-white">{a.title}</h3>
+              <h3 className="text-sm font-semibold text-brand-soft">{a.title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-brand-muted">{a.body}</p>
             </GlassCard>
           ))}
@@ -87,12 +87,12 @@ export function AgenticDecisionSystemSection() {
 
         <div
           id="decision-process"
-          className="rounded-2xl border border-white/[0.08] bg-white/[0.02] px-4 py-8 sm:px-8"
+          className="rounded-2xl border border-white/[0.08] bg-white/[0.03] px-4 py-8 sm:px-8"
         >
           <p className="text-center text-[11px] font-semibold uppercase tracking-[0.2em] text-brand-cyan">
             Decision path
           </p>
-          <h3 className="mt-2 text-center text-lg font-semibold text-white">
+          <h3 className="mt-2 text-center text-lg font-semibold text-brand-soft">
             From signals to governed action
           </h3>
           <div className="-mx-1 mt-8 overflow-x-auto px-1 pb-2 lg:mx-0 lg:overflow-visible lg:px-0">
@@ -100,7 +100,7 @@ export function AgenticDecisionSystemSection() {
               {flowSteps.map((label, i) => (
                 <Fragment key={label}>
                   <div className="w-full min-w-0 rounded-xl border border-white/[0.1] bg-brand-navy/40 px-4 py-3 text-center shadow-[inset_0_1px_0_0_rgb(255_255_255/0.04)] lg:w-40 lg:shrink-0">
-                    <p className="text-[11px] font-medium leading-snug text-white">
+                    <p className="text-[11px] font-medium leading-snug text-brand-soft">
                       {label}
                     </p>
                   </div>

@@ -26,7 +26,7 @@ export function InventoryCapitalUrgencySection() {
     <PageSection
       id="inventory-urgency"
       aria-labelledby="inventory-urgency-heading"
-      className="border-t border-white/[0.06] bg-[linear-gradient(180deg,rgba(34,211,238,0.04),transparent)] py-20 sm:py-24 lg:py-28"
+      className="border-t border-white/[0.08] bg-[linear-gradient(180deg,rgba(0,194,168,0.1),transparent)] py-20 sm:py-24 lg:py-28"
     >
       <div className="mx-auto max-w-6xl space-y-14 px-4 sm:px-6 lg:px-8">
         <SectionHeading
@@ -38,7 +38,7 @@ export function InventoryCapitalUrgencySection() {
           {cards.map((c) => (
             <GlassCard key={c.title} as="article" className="flex flex-col border-brand-cyan/10">
               <div className="mb-3 h-px w-10 bg-gradient-to-r from-brand-electric to-brand-cyan" />
-              <h3 className="text-base font-semibold text-white">{c.title}</h3>
+              <h3 className="text-base font-semibold text-brand-soft">{c.title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-brand-muted">{c.body}</p>
             </GlassCard>
           ))}
