@@ -51,14 +51,14 @@ export function HeroDashboardMockup() {
           <div className="flex flex-wrap items-center justify-between gap-3">
             <div>
               <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-brand-muted">
-                Inventory capital decisions
+                Human-governed layer
               </p>
               <p className="mt-1 text-sm font-semibold text-brand-soft">
-                Governed scenario workspace
+                Dead inventory · working capital
               </p>
             </div>
             <span className="rounded-full border border-brand-cyan/30 bg-brand-cyan/[0.08] px-3 py-1 text-[11px] font-medium text-brand-cyan">
-              Continuous run
+              Recommend · approve · execute
             </span>
           </div>
         </div>

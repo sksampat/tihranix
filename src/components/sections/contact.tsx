@@ -13,14 +13,14 @@ export function ContactSection() {
         <SectionHeading
           headingId="contact-heading"
           align="center"
-          eyebrow="Design partnership"
-          title="Explore a Tihranix design partnership."
-          description="We’re working with inventory-heavy teams that want to identify trapped working capital, evaluate governed action paths, and modernize inventory-capital decisions."
+          eyebrow="Working capital review"
+          title="Book a conversation with the Tihranix team."
+          description="Share your inventory footprint, governance requirements, and systems landscape. We will align on trapped capital signals, approval patterns, and a practical path from dead inventory resolution into broader decision flows."
         />
         <ContactForm />
         <p className="text-center text-xs leading-relaxed text-brand-muted">
-          Built for finance, supply chain, and operations teams managing complex inventory
-          decisions.
+          Built for finance, supply chain, and operations teams who need governed decisions—not
+          another passive dashboard.
         </p>
         <p className="text-center text-sm text-brand-muted">
           Email:{" "}

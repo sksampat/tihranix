@@ -2,10 +2,11 @@ import { SiteLogo } from "@/components/site-logo";
 
 const footerLinks = [
   { href: "#top", label: "Home" },
-  { href: "#product", label: "Product" },
-  { href: "#agentic-decision", label: "System" },
-  { href: "#outcomes", label: "Outcomes" },
-  { href: "#roadmap", label: "Roadmap" },
+  { href: "#why-it-matters", label: "Why" },
+  { href: "#how-it-works", label: "How" },
+  { href: "#pillars", label: "Pillars" },
+  { href: "#evolution", label: "Evolution" },
+  { href: "#trust", label: "Trust" },
   { href: "#assessment", label: "Contact" },
   { href: "mailto:contact@tihranix.ai", label: "Email" },
 ] as const;
@@ -17,9 +18,9 @@ export function Footer() {
         <div className="max-w-md space-y-4">
           <SiteLogo size="sm" />
           <p className="text-sm leading-relaxed text-brand-muted">
-            Governed inventory-capital decisions under constraint. Starts with dead and
-            slow-moving stock; extends into continuous optimization and constrained
-            allocation across the network.
+            Human-governed decision layer for inventory capital. Starts with dead and slow-moving
+            stock; expands into broader constrained inventory and supply chain decisions while
+            staying policy-aware, explainable, and auditable.
           </p>
         </div>
         <nav

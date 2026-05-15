@@ -20,16 +20,19 @@ export function FinalCtaSection() {
               id="final-cta-heading"
               className="mx-auto max-w-2xl text-2xl font-semibold tracking-tight text-brand-soft sm:text-3xl lg:text-4xl"
             >
-              Start where inventory decisions leak capital.
+              Recover trapped working capital—then widen the decision fabric with trust.
             </h2>
             <p className="mx-auto max-w-xl text-sm leading-relaxed text-brand-muted sm:text-base">
-              Tihranix helps enterprises solve the most measurable inventory-capital problem
-              first, then expand into broader constrained inventory decisions across supply
-              chain and finance.
+              Tihranix starts where dead inventory is undeniable, then reuses the same governed
+              decision layer for broader constrained inventory and supply chain flows. Book a
+              review to map exposure, controls, and integration paths with your stack.
             </p>
-            <div className="flex justify-center pt-2">
+            <div className="flex flex-col items-center justify-center gap-3 pt-2 sm:flex-row">
               <ButtonLink href="#assessment" variant="primary" className="px-6 py-3.5 text-sm sm:px-8">
-                Request a Design Partner Conversation
+                Book a working capital review
+              </ButtonLink>
+              <ButtonLink href="#how-it-works" variant="secondary" className="text-sm">
+                See how Tihranix works
               </ButtonLink>
             </div>
           </div>

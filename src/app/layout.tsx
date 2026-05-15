@@ -10,15 +10,14 @@ const plusJakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title:
-    "Tihranix — Governed inventory capital decisions from dead and slow-moving stock",
+  title: "Tihranix — Human-governed decisions for dead inventory and working capital",
   description:
-    "Tihranix continuously detects trapped inventory, simulates recovery paths, and recommends actions that unlock working capital without breaking service, margin, or policy constraints—then expands upstream into inventory capital optimization.",
+    "Tihranix is a human-governed decision layer for inventory capital: detect dead and slow-moving stock, simulate actions under policy, approve decisions, and expand the same fabric into broader constrained inventory flows across ERP, planning, and WMS.",
   metadataBase: new URL("https://tihranix.ai"),
   openGraph: {
-    title: "Tihranix — Inventory capital decision engine",
+    title: "Tihranix — Governed inventory capital decisions",
     description:
-      "Governed inventory-capital decisions under constraint. Starts with dead and slow-moving inventory; extends into continuous optimization and constrained allocation across supply chain and finance.",
+      "Start with dead inventory and trapped working capital. Expand into broader supply chain decision flows with recommend, approve, and guardrailed execute modes—policy-aware, explainable, and auditable.",
     siteName: "Tihranix",
     type: "website",
   },

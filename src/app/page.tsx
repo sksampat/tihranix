@@ -1,14 +1,11 @@
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { HeroSection } from "@/components/sections/hero";
-import { ProblemSection } from "@/components/sections/problem";
-import { InventoryCapitalUrgencySection } from "@/components/sections/inventory-capital-urgency";
-import { ProductSection } from "@/components/sections/product";
-import { AgenticDecisionSystemSection } from "@/components/sections/agentic-decision-system";
-import { OutcomesSection } from "@/components/sections/outcomes";
-import { WhyNowSection } from "@/components/sections/why-now";
-import { HowItFitsSection } from "@/components/sections/how-it-fits";
-import { RoadmapSection } from "@/components/sections/roadmap";
+import { WhyMattersSection } from "@/components/sections/why-matters";
+import { HowTihranixWorksSection } from "@/components/sections/how-tihranix-works";
+import { StrategicPillarsSection } from "@/components/sections/strategic-pillars";
+import { WedgePlatformSection } from "@/components/sections/wedge-platform";
+import { EnterpriseTrustSection } from "@/components/sections/enterprise-trust";
 import { FinalCtaSection } from "@/components/sections/final-cta";
 import { ContactSection } from "@/components/sections/contact";
 
@@ -18,14 +15,11 @@ export default function Home() {
       <Navbar />
       <main className="flex-1">
         <HeroSection />
-        <ProblemSection />
-        <InventoryCapitalUrgencySection />
-        <ProductSection />
-        <AgenticDecisionSystemSection />
-        <OutcomesSection />
-        <WhyNowSection />
-        <HowItFitsSection />
-        <RoadmapSection />
+        <WhyMattersSection />
+        <HowTihranixWorksSection />
+        <StrategicPillarsSection />
+        <WedgePlatformSection />
+        <EnterpriseTrustSection />
         <FinalCtaSection />
         <ContactSection />
       </main>

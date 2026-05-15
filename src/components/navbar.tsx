@@ -5,12 +5,11 @@ import { SiteLogo } from "@/components/site-logo";
 import { ButtonLink } from "@/components/ui/button-link";
 
 const links = [
-  { href: "#problem", label: "Problem" },
-  { href: "#inventory-urgency", label: "Capital risk" },
-  { href: "#product", label: "Product" },
-  { href: "#agentic-decision", label: "System" },
-  { href: "#outcomes", label: "Outcomes" },
-  { href: "#roadmap", label: "Roadmap" },
+  { href: "#why-it-matters", label: "Why it matters" },
+  { href: "#how-it-works", label: "How it works" },
+  { href: "#pillars", label: "Pillars" },
+  { href: "#evolution", label: "Evolution" },
+  { href: "#trust", label: "Trust" },
 ] as const;
 
 export function Navbar() {
@@ -44,7 +43,7 @@ export function Navbar() {
 
         <div className="hidden shrink-0 lg:block">
           <ButtonLink href="#assessment" variant="primary" className="px-3 py-2.5 text-xs sm:text-sm">
-            Partner conversation
+            Working capital review
           </ButtonLink>
         </div>
 
@@ -96,7 +95,7 @@ export function Navbar() {
               className="mt-2 w-full"
               onClick={() => setOpen(false)}
             >
-              Partner conversation
+              Working capital review
             </ButtonLink>
           </div>
         </div>
