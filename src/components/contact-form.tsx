@@ -38,7 +38,7 @@ export function ContactForm() {
   }
 
   const inputClass =
-    "mt-1.5 w-full rounded-xl border border-white/[0.1] bg-brand-navy/50 px-4 py-3 text-sm text-brand-soft placeholder:text-brand-muted/55 shadow-[inset_0_1px_0_0_rgb(255_255_255/0.03)] outline-none transition focus:border-brand-cyan/40 focus:ring-2 focus:ring-brand-cyan/12";
+    "mt-1.5 w-full rounded-xl border border-brand-border bg-brand-card px-4 py-3 text-sm text-brand-soft placeholder:text-brand-subtle shadow-[inset_0_1px_0_0_rgb(255_255_255/0.03)] outline-none transition focus:border-brand-border-hover focus:ring-2 focus:ring-brand-electric/10";
 
   return (
     <form onSubmit={handleSubmit} className="grid gap-5 sm:grid-cols-2" noValidate>

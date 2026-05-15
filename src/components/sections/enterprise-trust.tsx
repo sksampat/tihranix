@@ -23,7 +23,7 @@ export function EnterpriseTrustSection() {
             title="Governed, auditable, and ready for operators who answer to the balance sheet."
             description="Every Tihranix workflow operates with explicit control modes. Teams define policies, thresholds, escalations, and overrides before any decision becomes operational—so autonomy is always bounded by what your enterprise will sign."
           />
-          <ul className="space-y-4 rounded-2xl border border-white/[0.08] bg-brand-navy/25 p-6 sm:p-8">
+          <ul className="space-y-4 rounded-2xl border border-brand-border bg-brand-card p-6 sm:p-8">
             {trustPoints.map((t) => (
               <li key={t} className="flex gap-3 text-sm leading-relaxed text-brand-muted">
                 <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-brand-cyan" aria-hidden />

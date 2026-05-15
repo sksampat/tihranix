@@ -13,7 +13,7 @@ const footerLinks = [
 
 export function Footer() {
   return (
-    <footer className="border-t border-white/[0.08] bg-brand-navy-deep">
+    <footer className="border-t border-brand-border bg-brand-page">
       <div className="mx-auto flex max-w-6xl flex-col gap-10 px-4 py-14 sm:px-6 lg:flex-row lg:items-start lg:justify-between lg:px-8">
         <div className="max-w-md space-y-4">
           <SiteLogo size="sm" />
@@ -38,7 +38,7 @@ export function Footer() {
           ))}
         </nav>
       </div>
-      <div className="border-t border-white/[0.05] py-6 text-center text-xs text-brand-muted">
+      <div className="border-t border-brand-border py-6 text-center text-xs text-brand-subtle">
         © {new Date().getFullYear()} Tihranix. All rights reserved.
       </div>
     </footer>

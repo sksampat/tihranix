@@ -24,7 +24,7 @@ export function WedgePlatformSection() {
     <PageSection
       id="evolution"
       aria-labelledby="evolution-heading"
-      className="border-t border-white/[0.08] bg-brand-navy-deep/50 py-20 sm:py-24 lg:py-28"
+      className="border-t border-brand-border bg-brand-navy py-20 sm:py-24 lg:py-28"
     >
       <div className="mx-auto max-w-6xl space-y-12 px-4 sm:px-6 lg:px-8">
         <SectionHeading
@@ -37,7 +37,7 @@ export function WedgePlatformSection() {
           {phases.map((phase, i) => (
             <li
               key={phase.flow}
-              className="flex flex-col rounded-2xl border border-white/[0.08] bg-brand-navy/30 p-6"
+              className="flex flex-col rounded-2xl border border-brand-border bg-brand-card p-6"
             >
               <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-brand-cyan">
                 {phase.flow}

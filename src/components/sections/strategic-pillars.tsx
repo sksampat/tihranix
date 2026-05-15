@@ -42,10 +42,10 @@ export function StrategicPillarsSection() {
           {pillars.map((p) => (
             <article
               key={p.kicker}
-              className="relative overflow-hidden rounded-2xl border border-white/[0.08] bg-brand-navy/25 p-6 sm:p-8"
+              className="relative overflow-hidden rounded-2xl border border-brand-border bg-brand-card p-6 sm:p-8"
             >
               <div
-                className="pointer-events-none absolute left-0 top-0 h-full w-1 bg-brand-cyan/70"
+                className="pointer-events-none absolute left-0 top-0 h-full w-1 bg-brand-cyan/60"
                 aria-hidden
               />
               <p className="pl-3 text-[11px] font-semibold uppercase tracking-[0.2em] text-brand-muted">

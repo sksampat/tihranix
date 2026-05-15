@@ -7,12 +7,12 @@ export function FinalCtaSection() {
     <PageSection
       id="final-cta"
       aria-labelledby="final-cta-heading"
-      className="border-t border-white/[0.08] py-16 sm:py-20"
+      className="border-t border-brand-border py-16 sm:py-20"
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <GlassCard className="relative overflow-hidden p-0 text-center sm:px-2">
           <div
-            className="pointer-events-none absolute inset-0 bg-wash-section opacity-80"
+            className="pointer-events-none absolute inset-0 bg-wash-section opacity-70"
             aria-hidden
           />
           <div className="relative space-y-6 px-6 py-14 sm:px-12 sm:py-16">

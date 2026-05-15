@@ -16,11 +16,11 @@ export function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-white/[0.08] bg-brand-navy/90 backdrop-blur-xl">
+    <header className="sticky top-0 z-50 border-b border-brand-border bg-brand-page/92 backdrop-blur-xl">
       <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-8">
         <a
           href="#top"
-          className="rounded-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-cyan"
+          className="rounded-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-electric"
           aria-label="Tihranix home"
         >
           <SiteLogo size="md" />
@@ -49,7 +49,7 @@ export function Navbar() {
 
         <button
           type="button"
-          className="inline-flex items-center justify-center rounded-xl border border-white/[0.1] bg-white/[0.03] p-2 text-brand-soft transition hover:border-brand-cyan/30 hover:bg-brand-cyan/[0.05] lg:hidden"
+          className="inline-flex items-center justify-center rounded-xl border border-brand-border bg-brand-surface/40 p-2 text-brand-soft transition hover:border-brand-border-hover hover:bg-brand-surface/70 lg:hidden"
           aria-expanded={open}
           aria-controls="mobile-nav"
           onClick={() => setOpen((v) => !v)}
@@ -76,14 +76,14 @@ export function Navbar() {
       {open ? (
         <div
           id="mobile-nav"
-          className="border-t border-white/[0.08] bg-brand-navy/98 px-4 py-4 lg:hidden"
+          className="border-t border-brand-border bg-brand-page/98 px-4 py-4 lg:hidden"
         >
           <div className="flex flex-col gap-3">
             {links.map((l) => (
               <a
                 key={l.href}
                 href={l.href}
-                className="rounded-lg px-2 py-2 text-sm font-medium text-brand-soft/95 hover:bg-white/[0.05]"
+                className="rounded-lg px-2 py-2 text-sm font-medium text-brand-soft/95 hover:bg-brand-surface/60"
                 onClick={() => setOpen(false)}
               >
                 {l.label}

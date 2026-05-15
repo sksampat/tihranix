@@ -3,7 +3,7 @@ import { HeroDashboardMockup } from "@/components/hero-dashboard-mockup";
 
 export function HeroSection() {
   return (
-    <div className="relative overflow-hidden border-b border-white/[0.08]">
+    <div className="relative overflow-hidden border-b border-brand-border">
       <div className="pointer-events-none absolute inset-0 bg-wash-hero" aria-hidden />
       <div className="relative mx-auto grid max-w-6xl gap-12 px-4 py-20 sm:px-6 lg:grid-cols-2 lg:items-center lg:gap-16 lg:px-8 lg:py-28">
         <div className="space-y-8">
@@ -30,7 +30,7 @@ export function HeroSection() {
           <p className="max-w-xl text-sm leading-relaxed text-brand-muted">
             Progressive autonomy by design:{" "}
             <span className="text-brand-cyan">recommend</span>,{" "}
-            <span className="text-brand-cyan">human approve</span>, then{" "}
+            <span className="text-brand-electric">human approve</span>, then{" "}
             <span className="text-brand-cyan">guardrailed execute</span>—with audit trails
             and overrides where your policies require them.
           </p>

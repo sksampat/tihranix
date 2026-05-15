@@ -7,7 +7,7 @@ export function ContactSection() {
     <PageSection
       id="assessment"
       aria-labelledby="contact-heading"
-      className="border-t border-white/[0.08] bg-brand-navy-deep py-20 sm:py-24 lg:py-28"
+      className="border-t border-brand-border bg-brand-navy py-20 sm:py-24 lg:py-28"
     >
       <div className="mx-auto max-w-3xl space-y-10 px-4 sm:px-6 lg:px-8">
         <SectionHeading
@@ -26,7 +26,7 @@ export function ContactSection() {
           Email:{" "}
           <a
             href="mailto:contact@tihranix.ai"
-            className="font-medium text-brand-soft underline decoration-white/35 underline-offset-4 transition hover:decoration-brand-cyan/60"
+            className="font-medium text-brand-soft underline decoration-brand-border underline-offset-4 transition hover:decoration-brand-electric/50"
           >
             contact@tihranix.ai
           </a>

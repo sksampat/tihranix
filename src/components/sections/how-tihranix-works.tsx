@@ -25,7 +25,7 @@ export function HowTihranixWorksSection() {
     <PageSection
       id="how-it-works"
       aria-labelledby="how-heading"
-      className="border-t border-white/[0.08] bg-brand-navy-deep/40 py-20 sm:py-24 lg:py-28"
+      className="border-t border-brand-border bg-brand-navy py-20 sm:py-24 lg:py-28"
     >
       <div className="mx-auto max-w-6xl space-y-14 px-4 sm:px-6 lg:px-8">
         <SectionHeading
@@ -44,11 +44,11 @@ export function HowTihranixWorksSection() {
                   key={step.id}
                   className={`rounded-xl border px-4 py-4 sm:flex sm:items-start sm:gap-4 sm:px-5 sm:py-4 ${
                     step.id === "human"
-                      ? "border-brand-cyan/45 bg-brand-cyan/[0.06] shadow-[inset_0_0_0_1px_rgb(0_194_168/0.12)]"
-                      : "border-white/[0.1] bg-brand-navy/35"
+                      ? "border-brand-border-accent bg-brand-cyan/[0.06] shadow-[inset_0_0_0_1px_rgb(20_184_166/0.12)]"
+                      : "border-brand-border bg-brand-surface/50"
                   }`}
                 >
-                  <span className="inline-flex h-7 min-w-[1.75rem] items-center justify-center rounded-md border border-white/[0.12] bg-brand-navy-deep/80 text-[11px] font-semibold text-brand-muted">
+                  <span className="inline-flex h-7 min-w-[1.75rem] items-center justify-center rounded-md border border-brand-border bg-brand-card text-[11px] font-semibold text-brand-muted">
                     {i + 1}
                   </span>
                   <div className="mt-3 sm:mt-0 sm:min-w-0 sm:flex-1">
@@ -64,7 +64,7 @@ export function HowTihranixWorksSection() {
             </p>
           </div>
 
-          <div className="mt-10 border-t border-white/[0.08] pt-10 lg:col-span-5 lg:mt-0 lg:border-l lg:border-t-0 lg:pl-10 lg:pt-0">
+          <div className="mt-10 border-t border-brand-border pt-10 lg:col-span-5 lg:mt-0 lg:border-l lg:border-brand-border lg:border-t-0 lg:pl-10 lg:pt-0">
             <p className="text-sm font-medium text-brand-soft">Progressive autonomy</p>
             <p className="mt-2 text-sm leading-relaxed text-brand-muted">
               Each workflow can operate in the mode that matches risk and policy maturity—without
@@ -74,7 +74,7 @@ export function HowTihranixWorksSection() {
               {autonomy.map((a) => (
                 <li
                   key={a.mode}
-                  className="rounded-xl border border-white/[0.08] bg-brand-navy/30 px-4 py-4"
+                  className="rounded-xl border border-brand-border bg-brand-card px-4 py-4"
                 >
                   <p className="text-xs font-semibold uppercase tracking-[0.16em] text-brand-cyan">
                     {a.mode}
