@@ -25,10 +25,10 @@ export function ContactSection() {
         <p className="text-center text-sm text-brand-muted">
           Email:{" "}
           <a
-            href="mailto:contact@tihranix.ai"
+            href="mailto:intelligence@tihranix.ai"
             className="font-medium text-brand-soft underline decoration-brand-border underline-offset-4 transition hover:decoration-brand-electric/50"
           >
-            contact@tihranix.ai
+            intelligence@tihranix.ai
           </a>
         </p>
       </div>

@@ -8,7 +8,7 @@ const footerLinks = [
   { href: "#evolution", label: "Evolution" },
   { href: "#trust", label: "Trust" },
   { href: "#assessment", label: "Contact" },
-  { href: "mailto:contact@tihranix.ai", label: "Email" },
+  { href: "mailto:intelligence@tihranix.ai", label: "Email" },
 ] as const;
 
 export function Footer() {
