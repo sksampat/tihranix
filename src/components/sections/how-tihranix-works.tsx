@@ -12,7 +12,7 @@ const steps = [
   },
   {
     title: "Tihranix Builds the Intelligence Stack",
-    body: "Behind the scenes, Tihranix assembles the required internal agents: Import, PLDM, Semantic, Forecasting, Root Cause, Simulation, and Recommendation.",
+    body: "Behind the scenes, Tihranix assembles the operational intelligence, business governance, scenario simulation, and decision intelligence needed to deliver the outcome.",
   },
   {
     title: "Tihranix Delivers the Outcome",

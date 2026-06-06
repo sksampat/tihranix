@@ -4,10 +4,11 @@ import { SectionHeading } from "@/components/section-heading";
 const flow = [
   { label: "Customer Problem", muted: true },
   { label: "Discovery Layer", muted: false },
-  { label: "PLDM Layer", muted: false },
-  { label: "Semantic Layer", muted: false },
-  { label: "Reasoning Layer", muted: false },
-  { label: "Outcome Agent", muted: false },
+  { label: "Operational Intelligence Layer", muted: false },
+  { label: "Business Governance Layer", muted: false },
+  { label: "Scenario Intelligence Layer", muted: false },
+  { label: "Decision Intelligence Layer", muted: false },
+  { label: "Outcome Agents", muted: false },
 ] as const;
 
 const layers = [
@@ -16,20 +17,24 @@ const layers = [
     body: "Understands the business problem, asks the right questions, and defines the desired outcome.",
   },
   {
-    title: "PLDM Layer",
-    body: "Discovers patterns, associations, relationships, and operational context across imported enterprise data.",
+    title: "Operational Intelligence Layer",
+    body: "Transforms disconnected enterprise data into meaningful business relationships, patterns, associations, and operational context.",
   },
   {
-    title: "Semantic Layer",
-    body: "Defines KPIs, guardrails, policies, thresholds, and business rules.",
+    title: "Business Governance Layer",
+    body: "Defines KPIs, policies, thresholds, guardrails, and business rules that govern every recommendation.",
   },
   {
-    title: "Reasoning Layer",
-    body: "Runs forecasting, root cause analysis, simulations, recommendations, and scenario planning.",
+    title: "Scenario Intelligence Layer",
+    body: "Simulates future conditions, models what-if scenarios, fills planning gaps, and helps evaluate potential outcomes before action.",
+  },
+  {
+    title: "Decision Intelligence Layer",
+    body: "Runs forecasting, root cause analysis, recommendations, simulations, and next-best-action reasoning.",
   },
   {
     title: "Outcome Agents",
-    body: "Deliver customer-facing business outcomes such as dead inventory reduction, inventory health, and demand forecasting.",
+    body: "Deliver customer-facing business outcomes such as dead inventory reduction, inventory health, demand forecasting, and executive insights.",
   },
 ] as const;
 
@@ -73,7 +78,7 @@ export function IntelligenceEngineSection() {
           ))}
         </div>
 
-        <ol className="grid gap-4 md:grid-cols-2 lg:grid-cols-5">
+        <ol className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {layers.map((layer, i) => (
             <li
               key={layer.title}
