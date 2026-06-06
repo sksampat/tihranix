@@ -13,9 +13,9 @@ export function ContactSection() {
         <SectionHeading
           headingId="contact-heading"
           align="center"
-          eyebrow="Working capital review"
-          title="Book a conversation with the Tihranix team."
-          description="Share your inventory footprint, governance requirements, and systems landscape. We will align on trapped capital signals, approval patterns, and a practical path from dead inventory resolution into broader decision flows."
+          eyebrow="Request Pilot"
+          title="Tell us the outcome you want to achieve."
+          description="Share your inventory footprint, business goals, and systems landscape. We will estimate trapped working capital, align on guardrails, and map the fastest path to a dead inventory pilot."
         />
         <ContactForm />
         <p className="text-center text-xs leading-relaxed text-brand-muted">

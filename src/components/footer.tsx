@@ -2,11 +2,10 @@ import { SiteLogo } from "@/components/site-logo";
 
 const footerLinks = [
   { href: "#top", label: "Home" },
-  { href: "#why-it-matters", label: "Why" },
-  { href: "#how-it-works", label: "How" },
-  { href: "#pillars", label: "Pillars" },
-  { href: "#evolution", label: "Evolution" },
-  { href: "#trust", label: "Trust" },
+  { href: "#outcome-agents", label: "Outcome Agents" },
+  { href: "#how-it-works", label: "How It Works" },
+  { href: "#technology", label: "Technology" },
+  { href: "#company", label: "Company" },
   { href: "#assessment", label: "Contact" },
   { href: "mailto:intelligence@tihranix.ai", label: "Email" },
 ] as const;
@@ -18,9 +17,9 @@ export function Footer() {
         <div className="max-w-md space-y-4">
           <SiteLogo size="sm" />
           <p className="text-sm leading-relaxed text-brand-muted">
-            Human-governed decision layer for inventory capital. Starts with dead and slow-moving
-            stock; expands into broader constrained inventory and supply chain decisions while
-            staying policy-aware, explainable, and auditable.
+            Outcome-driven AI platform. Tell Tihranix the business outcome you want, and it
+            automatically assembles the intelligence needed to achieve it—starting with dead
+            inventory and inventory health, governed by a human-in-the-loop architecture.
           </p>
         </div>
         <nav

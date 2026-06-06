@@ -31,8 +31,9 @@ export function WhyMattersSection() {
       <div className="mx-auto max-w-6xl space-y-12 px-4 sm:px-6 lg:px-8">
         <SectionHeading
           headingId="why-matters-heading"
+          eyebrow="The problem"
           title="Why dead inventory is still one of the clearest capital leaks."
-          description="It is measurable in cash, visible in operations, and painful for both finance and supply chain. That is why Tihranix starts here—before expanding the same decision fabric upstream."
+          description="It is measurable in cash, visible in operations, and painful for both finance and supply chain. That is why Tihranix starts here—turning trapped working capital into a measurable business outcome."
         />
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {costs.map((c) => (

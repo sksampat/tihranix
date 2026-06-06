@@ -10,14 +10,14 @@ const plusJakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Tihranix — Human-governed decisions for dead inventory and working capital",
+  title: "Tihranix — Stop Losing Millions to Dead Inventory",
   description:
-    "Tihranix is a human-governed decision layer for inventory capital: detect dead and slow-moving stock, simulate actions under policy, approve decisions, and expand the same fabric into broader constrained inventory flows across ERP, planning, and WMS.",
+    "Tell Tihranix the business outcome you want. It discovers trapped working capital, identifies root causes, and recommends the next best action using autonomous business intelligence—starting with dead inventory optimization and inventory health.",
   metadataBase: new URL("https://tihranix.ai"),
   openGraph: {
-    title: "Tihranix — Governed inventory capital decisions",
+    title: "Tihranix — Outcome-driven AI for inventory intelligence",
     description:
-      "Start with dead inventory and trapped working capital. Expand into broader supply chain decision flows with recommend, approve, and guardrailed execute modes—policy-aware, explainable, and auditable.",
+      "Tell us the business outcome. Tihranix discovers the context, builds the intelligence stack, and deploys the right outcome agent—starting with dead inventory and inventory health.",
     siteName: "Tihranix",
     type: "website",
   },
