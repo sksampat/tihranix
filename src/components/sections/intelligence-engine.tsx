@@ -2,39 +2,29 @@ import { PageSection } from "@/components/page-section";
 import { SectionHeading } from "@/components/section-heading";
 
 const flow = [
-  { label: "Customer Problem", muted: true },
-  { label: "Discovery Layer", muted: false },
-  { label: "Operational Intelligence Layer", muted: false },
-  { label: "Business Governance Layer", muted: false },
-  { label: "Scenario Intelligence Layer", muted: false },
-  { label: "Decision Intelligence Layer", muted: false },
-  { label: "Outcome Agents", muted: false },
+  { label: "Enterprise Data (in place)", muted: true },
+  { label: "Portable Intelligence Models", muted: false },
+  { label: "Semantic Governance Layer", muted: false },
+  { label: "Decision Intelligence", muted: false },
+  { label: "Distributed Outcome Agents", muted: false },
 ] as const;
 
 const layers = [
   {
-    title: "Discovery Layer",
-    body: "Understands the business problem, asks the right questions, and defines the desired outcome.",
+    title: "Portable Intelligence Models",
+    body: "Portable Logical Data Model (PLDM) — a structured intelligence contract that helps Tihranix understand enterprise data patterns while keeping governance portable across systems.",
   },
   {
-    title: "Operational Intelligence Layer",
-    body: "Transforms disconnected enterprise data into meaningful business relationships, patterns, associations, and operational context.",
-  },
-  {
-    title: "Business Governance Layer",
+    title: "Semantic Governance Layer",
     body: "Defines KPIs, policies, thresholds, guardrails, and business rules that govern every recommendation.",
   },
   {
-    title: "Scenario Intelligence Layer",
-    body: "Simulates future conditions, models what-if scenarios, fills planning gaps, and helps evaluate potential outcomes before action.",
-  },
-  {
-    title: "Decision Intelligence Layer",
+    title: "Decision Intelligence",
     body: "Runs forecasting, root cause analysis, recommendations, simulations, and next-best-action reasoning.",
   },
   {
-    title: "Outcome Agents",
-    body: "Deliver customer-facing business outcomes such as dead inventory reduction, inventory health, demand forecasting, and executive insights.",
+    title: "Distributed Outcome Agents",
+    body: "Deploy governed intelligence where data already resides to deliver outcomes: dead inventory reduction, inventory health, demand forecasting, and executive insights.",
   },
 ] as const;
 
@@ -48,9 +38,9 @@ export function IntelligenceEngineSection() {
       <div className="mx-auto max-w-6xl space-y-12 px-4 sm:px-6 lg:px-8">
         <SectionHeading
           headingId="technology-heading"
-          eyebrow="Technology"
-          title="The Intelligence Engine Behind Every Outcome"
-          description="Every outcome is powered by a layered architecture working underneath. The customer sees the business result; Tihranix orchestrates the engine."
+          eyebrow="Technical architecture"
+          title="The intelligence engine underneath"
+          description="A distributed intelligence architecture that brings governed intelligence to the data where it already lives—delivering portable enterprise intelligence without forcing data centralization."
         />
 
         <div
@@ -78,14 +68,14 @@ export function IntelligenceEngineSection() {
           ))}
         </div>
 
-        <ol className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <ol className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {layers.map((layer, i) => (
             <li
               key={layer.title}
               className="flex flex-col rounded-2xl border border-brand-border bg-brand-card p-5"
             >
               <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-brand-cyan">
-                Layer {i + 1}
+                {String(i + 1).padStart(2, "0")}
               </p>
               <h3 className="mt-3 text-base font-semibold text-brand-soft">{layer.title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-brand-muted">{layer.body}</p>

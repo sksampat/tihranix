@@ -24,7 +24,7 @@ const costs = [
 export function WhyMattersSection() {
   return (
     <PageSection
-      id="why-it-matters"
+      id="problem"
       aria-labelledby="why-matters-heading"
       className="py-20 sm:py-24 lg:py-28"
     >

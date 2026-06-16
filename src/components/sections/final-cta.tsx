@@ -20,19 +20,19 @@ export function FinalCtaSection() {
               id="final-cta-heading"
               className="mx-auto max-w-2xl text-2xl font-semibold tracking-tight text-brand-soft sm:text-3xl lg:text-4xl"
             >
-              See how much cash is trapped in your dead inventory.
+              Reduce dead inventory and unlock working capital.
             </h2>
             <p className="mx-auto max-w-xl text-sm leading-relaxed text-brand-muted sm:text-base">
-              Tell Tihranix the business outcome you want. We discover the context, build the
-              intelligence stack, and deploy the right outcome agent—starting with dead inventory
-              reduction and inventory health.
+              See how Tihranix surfaces inventory at risk and turns it into governed, prioritized
+              actions your planners can act on—bringing decision intelligence to the data you
+              already have.
             </p>
             <div className="flex flex-col items-center justify-center gap-3 pt-2 sm:flex-row">
               <ButtonLink href="#assessment" variant="primary" className="px-6 py-3.5 text-sm sm:px-8">
-                See How Much Cash You Can Unlock
+                Book a Discovery Call
               </ButtonLink>
-              <ButtonLink href="#assessment" variant="secondary" className="text-sm">
-                Request Pilot
+              <ButtonLink href="#design-partner" variant="secondary" className="text-sm">
+                Become a Design Partner
               </ButtonLink>
             </div>
           </div>

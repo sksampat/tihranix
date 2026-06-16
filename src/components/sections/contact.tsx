@@ -13,9 +13,9 @@ export function ContactSection() {
         <SectionHeading
           headingId="contact-heading"
           align="center"
-          eyebrow="Request Pilot"
-          title="Tell us the outcome you want to achieve."
-          description="Share your inventory footprint, business goals, and systems landscape. We will estimate trapped working capital, align on guardrails, and map the fastest path to a dead inventory pilot."
+          eyebrow="Book a discovery call"
+          title="Let's reduce your dead inventory."
+          description="Share your inventory footprint, business goals, and systems landscape. We will estimate trapped working capital, align on guardrails, and map the fastest path to governed inventory recommendations."
         />
         <ContactForm />
         <p className="text-center text-xs leading-relaxed text-brand-muted">

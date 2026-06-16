@@ -5,10 +5,10 @@ import { SiteLogo } from "@/components/site-logo";
 import { ButtonLink } from "@/components/ui/button-link";
 
 const links = [
-  { href: "#outcome-agents", label: "Outcome Agents" },
   { href: "#how-it-works", label: "How It Works" },
-  { href: "#technology", label: "Technology" },
-  { href: "#company", label: "Company" },
+  { href: "#intelligence", label: "Intelligence" },
+  { href: "#why-now", label: "Why Now" },
+  { href: "#technology", label: "Architecture" },
 ] as const;
 
 export function Navbar() {
@@ -42,7 +42,7 @@ export function Navbar() {
 
         <div className="hidden shrink-0 lg:block">
           <ButtonLink href="#assessment" variant="primary" className="px-3 py-2.5 text-xs sm:text-sm">
-            Request Pilot
+            Book a Discovery Call
           </ButtonLink>
         </div>
 
@@ -94,7 +94,7 @@ export function Navbar() {
               className="mt-2 w-full"
               onClick={() => setOpen(false)}
             >
-              Request Pilot
+              Book a Discovery Call
             </ButtonLink>
           </div>
         </div>

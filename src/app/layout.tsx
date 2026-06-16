@@ -10,14 +10,14 @@ const plusJakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Tihranix — Stop Losing Millions to Dead Inventory",
+  title: "Tihranix — Reduce dead inventory and unlock working capital",
   description:
-    "Tell Tihranix the business outcome you want. It discovers trapped working capital, identifies root causes, and recommends the next best action using autonomous business intelligence—starting with dead inventory optimization and inventory health.",
+    "Tihranix is inventory decision intelligence for supply chain and finance teams. Identify inventory at risk of becoming dead stock and act on governed recommendations—bringing distributed intelligence to ERP, WMS, spreadsheets, and operational data where it already resides.",
   metadataBase: new URL("https://tihranix.ai"),
   openGraph: {
-    title: "Tihranix — Outcome-driven AI for inventory intelligence",
+    title: "Tihranix — Inventory decision intelligence",
     description:
-      "Tell us the business outcome. Tihranix discovers the context, builds the intelligence stack, and deploys the right outcome agent—starting with dead inventory and inventory health.",
+      "Reduce dead inventory and unlock working capital with governed, portable enterprise intelligence. Bring intelligence to the data—no forced centralization.",
     siteName: "Tihranix",
     type: "website",
   },

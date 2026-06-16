@@ -3,20 +3,24 @@ import { SectionHeading } from "@/components/section-heading";
 
 const steps = [
   {
-    title: "Tell Tihranix the Problem",
-    body: "Start in plain business language—for example, “We have too much dead inventory.”",
+    label: "Connect",
+    body: "Import data from ERP systems, spreadsheets, WMS platforms, and operational tools.",
   },
   {
-    title: "Tihranix Discovers Business Context",
-    body: "The Discovery Layer asks the right questions about KPIs, goals, constraints, actions, and guardrails.",
+    label: "Understand",
+    body: "Discover inventory patterns, relationships, and operational signals.",
   },
   {
-    title: "Tihranix Builds the Intelligence Stack",
-    body: "Behind the scenes, Tihranix assembles the operational intelligence, business governance, scenario simulation, and decision intelligence needed to deliver the outcome.",
+    label: "Govern",
+    body: "Apply business policies, KPIs, and decision guardrails.",
   },
   {
-    title: "Tihranix Delivers the Outcome",
-    body: "The customer receives governed recommendations, dashboards, and next-best actions.",
+    label: "Recommend",
+    body: "Generate prioritized actions to reduce inventory risk.",
+  },
+  {
+    label: "Execute",
+    body: "Enable planners to take confident action.",
   },
 ] as const;
 
@@ -27,24 +31,42 @@ export function HowTihranixWorksSection() {
       aria-labelledby="how-heading"
       className="border-t border-brand-border bg-brand-navy py-20 sm:py-24 lg:py-28"
     >
-      <div className="mx-auto max-w-6xl space-y-14 px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-6xl space-y-12 px-4 sm:px-6 lg:px-8">
         <SectionHeading
           headingId="how-heading"
-          eyebrow="How It Works"
-          title="Tell us the outcome. Tihranix assembles the intelligence to achieve it."
-          description="You describe the business outcome you want. Tihranix discovers the context, builds the intelligence stack, and deploys the right outcome agent—no technical setup required."
+          eyebrow="How it works"
+          title="How Tihranix Works"
+          description="From connecting your systems to confident action—governed decision intelligence that turns fragmented inventory data into prioritized next-best actions."
         />
 
-        <ol className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div
+          className="flex flex-wrap items-center gap-x-2 gap-y-2 text-sm font-medium"
+          aria-hidden
+        >
+          {steps.map((step, i) => (
+            <div key={step.label} className="flex items-center gap-2">
+              <span className="inline-flex items-center rounded-xl border border-brand-border-accent bg-brand-cyan/[0.07] px-4 py-2.5 text-brand-soft">
+                {step.label}
+              </span>
+              {i < steps.length - 1 ? (
+                <span className="text-brand-cyan" aria-hidden>
+                  →
+                </span>
+              ) : null}
+            </div>
+          ))}
+        </div>
+
+        <ol className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
           {steps.map((step, i) => (
             <li
-              key={step.title}
+              key={step.label}
               className="flex flex-col rounded-2xl border border-brand-border bg-brand-card p-6"
             >
               <span className="inline-flex h-9 w-9 items-center justify-center rounded-xl border border-brand-border-accent bg-brand-cyan/[0.08] text-sm font-semibold text-brand-cyan">
                 {i + 1}
               </span>
-              <h3 className="mt-4 text-base font-semibold text-brand-soft">{step.title}</h3>
+              <h3 className="mt-4 text-base font-semibold text-brand-soft">{step.label}</h3>
               <p className="mt-2 text-sm leading-relaxed text-brand-muted">{step.body}</p>
             </li>
           ))}

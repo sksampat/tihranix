@@ -2,10 +2,11 @@ import { SiteLogo } from "@/components/site-logo";
 
 const footerLinks = [
   { href: "#top", label: "Home" },
-  { href: "#outcome-agents", label: "Outcome Agents" },
   { href: "#how-it-works", label: "How It Works" },
-  { href: "#technology", label: "Technology" },
-  { href: "#company", label: "Company" },
+  { href: "#intelligence", label: "Intelligence" },
+  { href: "#why-now", label: "Why Now" },
+  { href: "#design-partner", label: "Design Partner" },
+  { href: "#technology", label: "Architecture" },
   { href: "#assessment", label: "Contact" },
   { href: "mailto:intelligence@tihranix.ai", label: "Email" },
 ] as const;
@@ -17,9 +18,9 @@ export function Footer() {
         <div className="max-w-md space-y-4">
           <SiteLogo size="sm" />
           <p className="text-sm leading-relaxed text-brand-muted">
-            Outcome-driven AI platform. Tell Tihranix the business outcome you want, and it
-            automatically assembles the intelligence needed to achieve it—starting with dead
-            inventory and inventory health, governed by a human-in-the-loop architecture.
+            Inventory decision intelligence for supply chain and finance teams. Tihranix reduces
+            dead inventory and unlocks working capital with governed, portable enterprise
+            intelligence—bringing intelligence to the data where it already resides.
           </p>
         </div>
         <nav
